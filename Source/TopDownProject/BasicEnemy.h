@@ -29,63 +29,77 @@ public:
 	/** Called to bind functionality to input */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	/** Behaviour Tree used by this character */
 	UPROPERTY(EditAnywhere, Category = "Pawn")
 		class UBehaviorTree *BTree;
 
+	/** Returns IsAttacking */
 	UFUNCTION(BlueprintCallable, Category = "IsAttacking")
 		bool GetIsAttacking();
 
+	/** Sets IsAttacking */
 	UFUNCTION(BlueprintCallable, Category = "IsAttacking")
 		void SetIsAttacking(bool IsAttacking);
 
+	/** Gets IsOverlapping */
 	UFUNCTION(BlueprintCallable, Category = "IsOverlapping")
 		bool GetIsOverlapping();
 	
+	/** Sets IsOverlapping */
 	UFUNCTION(BlueprintCallable, Category = "IsOverlapping")
 		void SetIsOverlapping(bool IsOverlapping);
 
+	/** Plays ElectricSound */
 	UFUNCTION(BlueprintCallable, Category = "Sound")
 		void PlayElectricSound();
 
+	/** Plays OnHitSound */
 	void PlayOnHitSound();
 
 	/** RecieveDamage function from DamageInterface */
 	virtual void ReceiveDamage(float IncomingDamage) override;
 
+	/** Sets Health */
 	void SetHealth(float Health);
 
 	/** GetHealthRemaining function from DamageInterface */
 	virtual float GetHealthRemaining() override;
 
+	/** Performs actions associated with this character's death */
 	void DeathSequence();
 
+	/** Calculates this characters field of vision */
 	float CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot);
 
+	/** Checks if the player character is in range of this character's fov */
 	bool PlayerInFOV(float Angle);
 
+	/** Calculates the distance between two vectors */
 	float CalcDist(FVector Vect1, FVector Vect2);
 
+	/** Returns Alert */
 	bool IsAlert();
 
+	/** Sets Alert */
 	void SetAlert(bool Alertness);
 
 private:
-	float Health;
+	float Health; /**< Health stores how much health this character has */
 
-	float MI_PI;
+	float MI_PI; /**< Set float value used in radian and degree conversions */
 
-	bool IsAttacking;
+	bool IsAttacking; /**< IsAttacking determines if this character is currently attacking */
 
-	bool IsOverlapping;
+	bool IsOverlapping; /**< IsOverlapping determines if this character's hitbox is overlapping with the player */
 
-	bool Alert;
+	bool Alert; /**< Alert determines if this character is aware of the player */
 
 	UPROPERTY(EditAnywhere, Category = "Sound")
-		class USoundBase *ElectricSound;
+		class USoundBase *ElectricSound; /**< Sound file to play when this character attacks */
 	
 	UPROPERTY(EditAnywhere, Category = "Sound")
-		class USoundBase *ExplosionSound;
+		class USoundBase *ExplosionSound; /**< Sound file to play when this character dies */
 
 	UPROPERTY(EditAnywhere, Category = "Sound")
-		class USoundBase *OnHitSound;
+		class USoundBase *OnHitSound; /**< Sound file to play when this character is hit with a bullet */
 };

@@ -39,44 +39,50 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(BlueprintReadOnly, Category = "NPC")
-		class ABasicEnemy *PawnAsNPC;
-
+		class ABasicEnemy *PawnAsNPC; /**< BasicEnemy for this controller to possess */
+	
 	UPROPERTY(BlueprintReadWrite, Category = "Behavior")
-		class UBlackboardComponent *BlackboardComp;
-
+		class UBlackboardComponent *BlackboardComp; /**< BlackboardComponent for this controller to use, taken from possessed BasicEnemy */
+	
 	UPROPERTY(BlueprintReadWrite, Category = "Behavior")
-		class UBehaviorTreeComponent *BehaviorTreeComp;
+		class UBehaviorTreeComponent *BehaviorTreeComp; /**< BehaviourTreeComponent for this controller to use, taken from possessed BasicEnemy */
 
 public:
 	/** Called every frame */
 	virtual void Tick(float DeltaTime) override;
 
+	/** Possesses a Pawn */
 	virtual void Possess(APawn* InPawn) override;
 
+	/** Unpossesses currently possessed pawn */
 	virtual void UnPossess() override;
 
+	/** Sets PawnAsNPC->Alert to false */
 	void Alertness();
 
+	/** Returns CurrentState */
 	states GetCurrentState();
 
+	/** Returns BBoard */
 	UBlackboardComponent *GetBBoard();
 
+	/** Returns BTree */
 	UBehaviorTreeComponent *GetBTree();
 
 private:
-	float Distance;
+	float Distance; /**< Distance determines how far away the player is from the possessed pawn */
 
-	float FOV;
+	float FOV; /**< FOV determines if the player is in the possessed pawn's field of vision */
 
-	float LengthOfSight;
+	float LengthOfSight; /**< LengthOfSight determines the maximum distance at which the possessed pawn is able to see the player */
 
-	bool InFOV;
+	bool InFOV; /**< InFOV determines if the player currently in the possessed pawn's field of vision */
 
-	states CurrentState;
+	states CurrentState; /**< CurrentState determines the state the controller is currently in */
 
-	states NextState;
+	states NextState; /**< NextState determines the next state for the controller to transition into */
 
-	events CurrentEvent;
+	events CurrentEvent; /**< CurrentEvent determines the current event of this controller's state */
 
-	FTimerHandle AlertCoolDown;
+	FTimerHandle AlertCoolDown; /**< AlertCoolDown determines how long to wait to call Alertness */
 };

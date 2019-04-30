@@ -20,7 +20,8 @@ APlayerChar::APlayerChar()
  	/** Set to call Tick every frame */
 	PrimaryActorTick.bCanEverTick = true;
 
-	/** Sets initial values for Health, MoveSpeedUp, MoveSpeedRight, IsAttacking and MouseHeld */
+	/** Sets initial values for Health, MaxHealth, MoveSpeedUp, MoveSpeedRight,
+	FireOffset, IsAttacking, MouseHeld and Paused	*/
 	Health = 100.0f;
 	MaxHealth = 100.0f;
 	MoveSpeedUp = 0.0f;
@@ -64,11 +65,13 @@ void APlayerChar::Tick(float DeltaTime)
 		Attack();
 	}
 
-	if (Paused == false)
+	/** If Paused is false, then InputMode is set to GameOnly */
+	if (!Paused)
 	{
 		UWidgetBlueprintLibrary::SetInputMode_GameOnly(Controller);
 	}
 
+	/** Is Health is equal to or less then 0, the game is paused and the GameOver widget is created */
 	if (GetHealthRemaining() <= 0)
 	{
 		Controller->SetPause(true);
@@ -85,10 +88,10 @@ void APlayerChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	/** Sets input components for attacking and movement */
+	/** Sets input components for attacking, moveing and pausing the game */
 	InputComponent->BindAction("Attack", IE_Pressed, this, &APlayerChar::MousePressed);
 	InputComponent->BindAction("Attack", IE_Released, this, &APlayerChar::MouseReleased);
-	InputComponent->BindAction("Quit", IE_Pressed, this, &APlayerChar::QuitGame);
+	InputComponent->BindAction("Pause", IE_Pressed, this, &APlayerChar::PauseGame);
 	InputComponent->BindAxis("MoveUp", this, &APlayerChar::MoveUp);
 	InputComponent->BindAxis("MoveRight", this, &APlayerChar::MoveRight);
 }
@@ -110,6 +113,7 @@ void APlayerChar::Attack()
 			{
 				World->SpawnActor<ABullet>(Projectile, SpawnLoc, SpawnRot);
 			}
+			/** Plays FireSound */
 			if (FireSound != nullptr)
 			{
 				UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
@@ -127,12 +131,12 @@ void APlayerChar::MoveUp(float Value)
 	/** Checks if Value is not 0*/
 	if (Value != 0.0f)
 	{
-		/** Sets MoveSpeedUp */
+		/** Sets MoveSpeedUp to Value * 800.0f */
 		MoveSpeedUp = Value * 800.0f;
 	}
 	else
 	{
-		/** Sets MoveSpeedUp */
+		/** Sets MoveSpeedUp to 0.0f */
 		MoveSpeedUp = 0.0f;
 	}
 }
@@ -142,12 +146,12 @@ void APlayerChar::MoveRight(float Value)
 	/** Checks if Value is not 0*/
 	if (Value != 0.0f)
 	{
-		/** Sets MoveSpeedRight */
+		/** Sets MoveSpeedRight to Value * 800.0f */
 		MoveSpeedRight = Value * 800.0f;
 	}
 	else
 	{
-		/** Sets MoveSpeedRight */
+		/** Sets MoveSpeedRight to 0.0f */
 		MoveSpeedRight = 0.0f;
 	}
 }
@@ -172,36 +176,44 @@ void APlayerChar::MouseReleased()
 
 bool APlayerChar::GetPaused()
 {
+	/** Returns Paused */
 	return Paused;
 }
 
 void APlayerChar::SetPaused(bool Pause)
 {
+	/** Sets Paused to Pause */
 	this->Paused = Pause;
 }
 
 float APlayerChar::GetHealth()
 {
+	/** Returns Health / MaxHealth */
 	return Health / MaxHealth;
 }
 
 void APlayerChar::ReceiveDamage(float IncomingDamage)
 {
+	/** Checks if IncomingDamage is greater than or equal to 0 */
 	if (IncomingDamage >= 0)
 	{
+		/** Reduces Health by IncomingDamage */
 		Health -= IncomingDamage;
 	}
 }
 
 float APlayerChar::GetHealthRemaining()
 {
+	/** Returns Health */
 	return Health;
 }
 
-void APlayerChar::QuitGame()
+void APlayerChar::PauseGame()
 {
-	if (Paused == false)
+	/** Checks if Paused is false */
+	if (!Paused)
 	{
+		/** Calls player controller and pauses game, sets Paused to true and creates the PauseMenu widget */
 		APlayerController *Controller = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
 		Controller->SetPause(true);
 		Paused = true;

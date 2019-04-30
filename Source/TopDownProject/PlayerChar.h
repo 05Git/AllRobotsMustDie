@@ -47,12 +47,15 @@ public:
 	/** Sets MouseHeld to false	*/
 	void MouseReleased();
 
+	/** Returns Paused */
 	UFUNCTION(BlueprintCallable, Category = "Pause")
 		bool GetPaused();
 
+	/** Sets Paused */
 	UFUNCTION(BlueprintCallable, Category = "Pause")
 		void SetPaused(bool Pause);
 
+	/** Returns Health */
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		float GetHealth();
 
@@ -64,12 +67,12 @@ public:
 	virtual float GetHealthRemaining() override;
 
 	/** Exits the game */
-	void QuitGame();
+	void PauseGame();
 	
 private:
-	float Health;
+	float Health; /**< Health determines how much health the player currently has */
 
-	float MaxHealth;
+	float MaxHealth; /**< MaxHealth determines the maximum amount of health a player is allowed to have */
 
 	float MoveSpeedUp; /**< MoveSpeedUp determines movement along the X axis */
 
@@ -85,7 +88,7 @@ private:
 
 	bool MouseHeld; /**< MouseHeld determines if the player is currently holding down the left mouse button */
 
-	bool Paused;
+	bool Paused; /**< Paused determines if the game is paused or not */
 
 	FTimerHandle AttackCoolDown; /**< AttackCoolDown determines the time is takes for IsAttacking to reset */
 
@@ -99,15 +102,14 @@ private:
 		class USoundBase *FireSound; /**< Sound file to play when a bullet is created */
 
 	UPROPERTY(EditAnywhere, Category = "Projectile")
-		TSubclassOf<class ABullet> Projectile;
+		TSubclassOf<class ABullet> Projectile; /**< Type of Bullet the player is currently able to use */
 
 	UPROPERTY(EditAnywhere, Category = "Widgets")
-		TSubclassOf<class UUserWidget> GameOver;
+		TSubclassOf<class UUserWidget> GameOver; /**< Widget to use when the player dies */
 
 	UPROPERTY(EditAnywhere, Category = "Widgets")
-		TSubclassOf<class UUserWidget> PauseMenu;
+		TSubclassOf<class UUserWidget> PauseMenu; /**< Widget to use when the player pauses the game */
 
 	UPROPERTY()
-		class UUserWidget *CurrentWidget;
-
+		class UUserWidget *CurrentWidget; /**< Current widget to draw on the HUD */
 };
