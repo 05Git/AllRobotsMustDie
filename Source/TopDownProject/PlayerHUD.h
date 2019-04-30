@@ -14,19 +14,21 @@ class TOPDOWNPROJECT_API APlayerHUD : public AHUD
 	GENERATED_BODY()
 	
 public:
+	/** Sets default values for this object's properties */
 	APlayerHUD();
 
+	/** Draws the HUD */
 	virtual void DrawHUD() override;
 
 private:
-	class APlayerChar *Player;
+	class APlayerChar *Player; /**< Pointer to the player character */
 
 	UPROPERTY(EditAnywhere, Category = "Font")
-		UFont *Font;
+		UFont *Font; /**< Font used by the HUD */
 
 	UPROPERTY(EditAnywhere, Category = "Widgets")
-		TSubclassOf<class UUserWidget> Health;
+		TSubclassOf<class UUserWidget> Health; /**< Health bar to show the player's health */
 
 	UPROPERTY()
-		class UUserWidget *CurrentWidget;
+		class UUserWidget *CurrentWidget; /**< The current widget to draw on the HUD */
 };

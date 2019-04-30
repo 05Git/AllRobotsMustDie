@@ -30,6 +30,7 @@ ABullet::ABullet()
 	/** Destroys projectile after 3 seconds */
 	InitialLifeSpan = 3.0f;
 
+	/** Sets BaseDamage and CritMultiplier */
 	BaseDamage = 20.0f;
 	CritMultiplier = 2.0f;
 }
@@ -47,11 +48,15 @@ void ABullet::Tick(float DeltaTime)
 void ABullet::OnHit(UPrimitiveComponent *HitComp, AActor *OtherActor,
 	UPrimitiveComponent *OtherComp, FVector NormalImpulse, const FHitResult &Hit)
 {
+	/** Checks if bullet collided with a BasicEnemy */
 	if (ABasicEnemy *BEnemy = Cast<ABasicEnemy>(Hit.GetActor()))
 	{
+		/** Checks if BasicEnemy is not alert */
 		if (!BEnemy->IsAlert())
 		{
+			/** Assigns BaseDamage * CritMultiplier */
 			BEnemy->ReceiveDamage(BaseDamage * CritMultiplier);
+			/** Plays CritSound */
 			if (CritSound != nullptr)
 			{
 				UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
@@ -60,8 +65,10 @@ void ABullet::OnHit(UPrimitiveComponent *HitComp, AActor *OtherActor,
 		}
 		else
 		{
+			/** Assigns BaseDamage */
 			BEnemy->ReceiveDamage(BaseDamage);
 		}
+		/** Plays BasicEnemy's OnHitSound and set's alert to true */
 		BEnemy->PlayOnHitSound();
 		BEnemy->SetAlert(true);
 	}

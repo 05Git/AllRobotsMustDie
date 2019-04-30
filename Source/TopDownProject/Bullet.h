@@ -14,7 +14,7 @@ class TOPDOWNPROJECT_API ABullet : public AActor
 	GENERATED_BODY()
 	
 public:	
-	/** Sets default values for this character's properties */
+	/** Sets default values for this object's properties */
 	ABullet();
 
 protected:
@@ -31,9 +31,9 @@ public:
 			 UPrimitiveComponent *OtherComp, FVector NormalImpulse, const FHitResult &Hit);
 
 private:
-	float BaseDamage;
+	float BaseDamage; /**< BaseDamage determines the basic amount of damage a bullet will do */
 
-	float CritMultiplier;
+	float CritMultiplier; /**< CritMultiplier determinesa the amount BaseDamage is multiplied by when performing a critical hit */
 
 	UPROPERTY(EditAnywhere, Category = "Static Mesh")
 		class UStaticMeshComponent *Mesh; /**< Static Mesh component */
@@ -41,5 +41,5 @@ private:
 	class UProjectileMovementComponent *Movement; /**< Projectile movement component */
 
 	UPROPERTY(EditAnywhere, Category = "Sound")
-		class USoundBase *CritSound;
+		class USoundBase *CritSound; /**< Sound file to play when a critical hit is performed */
 };

@@ -14,10 +14,11 @@ class TOPDOWNPROJECT_API UBTTast_CheckState : public UBTTaskNode
 	GENERATED_BODY()
 	
 public:
+	/** Performs task, returns succeeded if successful or failed if failure */
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent &OwnerComp, uint8 *NodeMemory) override;
 
 private:
-	class ABEnemyController *Controller;
+	class ABEnemyController *Controller; /**< Pointer to enemy AI controller */
 
-	class ABasicEnemy *PawnAsNPC;	
+	class ABasicEnemy *PawnAsNPC; /**< Pointer to enemy */
 };
