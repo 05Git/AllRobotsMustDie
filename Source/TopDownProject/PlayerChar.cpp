@@ -17,21 +17,19 @@
 
 APlayerChar::APlayerChar()
 {
- 	/** Set to call Tick every frame */
-	PrimaryActorTick.bCanEverTick = true;
+ 	
+	PrimaryActorTick.bCanEverTick = true; // Set to call Tick every frame
 
-	/** Sets initial values for Health, MaxHealth, MoveSpeedUp, MoveSpeedRight,
-	FireOffset, IsAttacking, MouseHeld and Paused	*/
-	Health = 100.0f;
-	MaxHealth = 100.0f;
-	MoveSpeedUp = 0.0f;
-	MoveSpeedRight = 0.0f;
-	FireOffset = 80.0f;
-	IsAttacking = false;
-	MouseHeld = false;
-	Paused = false;
+	Health = 100.0f; // Sets initial value of Health
+	MaxHealth = 100.0f; // Sets initial value of MaxHealth
+	MoveSpeedUp = 0.0f; // Sets initial value of MoveSpeedUp
+	MoveSpeedRight = 0.0f; // Sets initial value of MoveSpeedRight
+	FireOffset = 80.0f; // Sets initial value of FireOffset
+	IsAttacking = false; // Sets initial value of IsAttacking
+	MouseHeld = false; // Sets initial value of MouseHeld
+	Paused = false; // Sets initial value of Paused
 	
-	/** Creates Camera and Spring Arm components */
+	// Creates Camera and Spring Arm components
 	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("CameraComponent"));
 	Boom = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArmComponent"));
 	Boom->SetupAttachment(RootComponent);
@@ -47,11 +45,11 @@ void APlayerChar::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	/** Moves player along X and Y axis depending on input */
+	// Moves player along X and Y axis depending on input
 	FVector Move = FVector(MoveSpeedUp * DeltaTime, MoveSpeedRight * DeltaTime, 0.0f);
 	AddActorWorldOffset(Move, true);
 
-	/** Rotates player to face the mouse cursor */
+	// Rotates player to face the mouse cursor
 	APlayerController *Controller = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
 	Controller->DeprojectMousePositionToWorld(MousePos, MouseDir);
 	FRotator PlayerRot = this->GetActorRotation();
@@ -59,19 +57,19 @@ void APlayerChar::Tick(float DeltaTime)
 	FRotator Rotation = FRotator(PlayerRot.Pitch, MouseRot.Yaw, PlayerRot.Roll);
 	AddActorLocalRotation(Rotation, true);
 
-	/** If MouseHeld is true, then Attack is called */
+	// If MouseHeld is true, then Attack is called
 	if (MouseHeld)
 	{
 		Attack();
 	}
 
-	/** If Paused is false, then InputMode is set to GameOnly */
+	// If Paused is false, then InputMode is set to GameOnly
 	if (!Paused)
 	{
 		UWidgetBlueprintLibrary::SetInputMode_GameOnly(Controller);
 	}
 
-	/** Is Health is equal to or less then 0, the game is paused and the GameOver widget is created */
+	// Is Health is equal to or less then 0, the game is paused and the GameOver widget is created
 	if (GetHealthRemaining() <= 0)
 	{
 		Controller->SetPause(true);
@@ -88,7 +86,7 @@ void APlayerChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
-	/** Sets input components for attacking, moveing and pausing the game */
+	// Sets input components for attacking, moveing and pausing the game
 	InputComponent->BindAction("Attack", IE_Pressed, this, &APlayerChar::MousePressed);
 	InputComponent->BindAction("Attack", IE_Released, this, &APlayerChar::MouseReleased);
 	InputComponent->BindAction("Pause", IE_Pressed, this, &APlayerChar::PauseGame);
@@ -98,29 +96,29 @@ void APlayerChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 void APlayerChar::Attack()
 {
-	/** Checks if IsAttacking is false */
+	// Checks if IsAttacking is false
 	if (!IsAttacking)
 	{
-		/** Gets location to spawn bullet */
+		// Gets location to spawn bullet
 		FRotator SpawnRot = this->GetActorRotation();
 		FVector SpawnLoc = this->GetActorLocation() + (this->GetActorForwardVector() * FireOffset);
 		UWorld *const World = GetWorld();
-		/** Checks if World is not null */
+		// Checks if World is not null
 		if (World != NULL)
 		{
-			/** Spawns a bullet */
+			// Spawns a bullet
 			if (Projectile)
 			{
 				World->SpawnActor<ABullet>(Projectile, SpawnLoc, SpawnRot);
 			}
-			/** Plays FireSound */
+			// Plays FireSound
 			if (FireSound != nullptr)
 			{
 				UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 				UGameplayStatics::PlaySoundAtLocation(this, FireSound, this->GetActorLocation(), Instance->GetVolume());
 			}
 		}
-		/** Gets world timer manager and sets a timer to call CanAttack after 0.5 seconds, then sets IsAttacking to false */
+		// Gets world timer manager and sets a timer to call CanAttack after 0.5 seconds, then sets IsAttacking to false
 		World->GetTimerManager().SetTimer(AttackCoolDown, this, &APlayerChar::CanAttack, 0.5f);
 		IsAttacking = true;
 	}
@@ -128,92 +126,81 @@ void APlayerChar::Attack()
 
 void APlayerChar::MoveUp(float Value)
 {
-	/** Checks if Value is not 0*/
+	// Checks if Value is not 0
 	if (Value != 0.0f)
 	{
-		/** Sets MoveSpeedUp to Value * 800.0f */
-		MoveSpeedUp = Value * 800.0f;
+		MoveSpeedUp = Value * 800.0f; // Sets MoveSpeedUp to Value * 800.0f
 	}
 	else
 	{
-		/** Sets MoveSpeedUp to 0.0f */
-		MoveSpeedUp = 0.0f;
+		MoveSpeedUp = 0.0f; // Sets MoveSpeedUp to 0.0f
 	}
 }
 
 void APlayerChar::MoveRight(float Value)
 {
-	/** Checks if Value is not 0*/
+	// Checks if Value is not 0
 	if (Value != 0.0f)
 	{
-		/** Sets MoveSpeedRight to Value * 800.0f */
-		MoveSpeedRight = Value * 800.0f;
+		MoveSpeedRight = Value * 800.0f; // Sets MoveSpeedRight to Value * 800.0f
 	}
 	else
 	{
-		/** Sets MoveSpeedRight to 0.0f */
-		MoveSpeedRight = 0.0f;
+		MoveSpeedRight = 0.0f; // Sets MoveSpeedRight to 0.0f
 	}
 }
 
 void APlayerChar::CanAttack()
 {
-	/** Sets IsAttacking to false */
-	IsAttacking = false;
+	IsAttacking = false; // Sets IsAttacking to false
 }
 
 void APlayerChar::MousePressed()
 {
-	/** Sets MouseHeld to true */
-	MouseHeld = true;
+	MouseHeld = true; // Sets MouseHeld to true
 }
 
 void APlayerChar::MouseReleased()
 {
-	/** Sets MouseHeld to false */
-	MouseHeld = false;
+	MouseHeld = false; // Sets MouseHeld to false
 }
 
 bool APlayerChar::GetPaused()
 {
-	/** Returns Paused */
-	return Paused;
+	return Paused; // Returns Paused
 }
 
 void APlayerChar::SetPaused(bool Pause)
 {
-	/** Sets Paused to Pause */
-	this->Paused = Pause;
+	this->Paused = Pause; // Sets Paused to Pause
 }
 
 float APlayerChar::GetHealth()
 {
-	/** Returns Health / MaxHealth */
-	return Health / MaxHealth;
+	return Health / MaxHealth; // Returns Health / MaxHealth
 }
 
 void APlayerChar::ReceiveDamage(float IncomingDamage)
 {
-	/** Checks if IncomingDamage is greater than or equal to 0 */
+	// Checks if IncomingDamage is greater than or equal to 0
 	if (IncomingDamage >= 0)
 	{
-		/** Reduces Health by IncomingDamage */
+		// Reduces Health by IncomingDamage
 		Health -= IncomingDamage;
 	}
 }
 
 float APlayerChar::GetHealthRemaining()
 {
-	/** Returns Health */
-	return Health;
+	return Health; // Returns Health
 }
 
 void APlayerChar::PauseGame()
 {
-	/** Checks if Paused is false */
+	// Checks if Paused is false
 	if (!Paused)
 	{
-		/** Calls player controller and pauses game, sets Paused to true and creates the PauseMenu widget */
+		// Calls player controller and pauses game, sets Paused to true and creates the PauseMenu widget
 		APlayerController *Controller = Cast<APlayerController>(GEngine->GetFirstLocalPlayerController(GetWorld()));
 		Controller->SetPause(true);
 		Paused = true;

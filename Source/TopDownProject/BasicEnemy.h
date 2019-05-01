@@ -29,9 +29,8 @@ public:
 	/** Called to bind functionality to input */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	/** Behaviour Tree used by this character */
 	UPROPERTY(EditAnywhere, Category = "Pawn")
-		class UBehaviorTree *BTree;
+		class UBehaviorTree *BTree; /**< Behaviour Tree used by this character */
 
 	/** Returns IsAttacking */
 	UFUNCTION(BlueprintCallable, Category = "IsAttacking")
@@ -41,13 +40,19 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "IsAttacking")
 		void SetIsAttacking(bool IsAttacking);
 
-	/** Gets IsOverlapping */
+	/** Returns IsOverlapping */
 	UFUNCTION(BlueprintCallable, Category = "IsOverlapping")
 		bool GetIsOverlapping();
 	
 	/** Sets IsOverlapping */
 	UFUNCTION(BlueprintCallable, Category = "IsOverlapping")
 		void SetIsOverlapping(bool IsOverlapping);
+
+	/** Returns Alert */
+	bool IsAlert();
+
+	/** Sets Alert */
+	void SetAlert(bool Alertness);
 
 	/** Plays ElectricSound */
 	UFUNCTION(BlueprintCallable, Category = "Sound")
@@ -77,11 +82,11 @@ public:
 	/** Calculates the distance between two vectors */
 	float CalcDist(FVector Vect1, FVector Vect2);
 
-	/** Returns Alert */
-	bool IsAlert();
+	/** Converts a radian to degrees */
+	float ConvRadianToDegree(float Rad);
 
-	/** Sets Alert */
-	void SetAlert(bool Alertness);
+	/** Converts a degree to a radian */
+	float ConvDegreeToRadian(float Degree);
 
 private:
 	float Health; /**< Health stores how much health this character has */

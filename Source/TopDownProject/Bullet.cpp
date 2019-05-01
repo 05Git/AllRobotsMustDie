@@ -10,15 +10,14 @@
 
 ABullet::ABullet()
 {
-	/** Set to call Tick every frame */
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = true; // Set to call Tick every frame
 
-	/** Creates and sets Static Mesh component */
+	// Creates and sets Static Mesh component
 	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("StaticMeshComponent"));
 	Mesh->BodyInstance.SetCollisionProfileName("Projectile");
 	Mesh->OnComponentHit.AddDynamic(this, &ABullet::OnHit);
 
-	/** Creates and sets Projectile Movement component */
+	// Creates and sets Projectile Movement component
 	Movement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileMovementComponent"));
 	Movement->UpdatedComponent = Mesh;
 	Movement->InitialSpeed = 5000.0f;
@@ -27,12 +26,10 @@ ABullet::ABullet()
 	Movement->bShouldBounce = false;
 	Movement->ProjectileGravityScale = 0.0f;
 
-	/** Destroys projectile after 3 seconds */
-	InitialLifeSpan = 3.0f;
+	InitialLifeSpan = 3.0f; // Destroys projectile after 3 seconds
 
-	/** Sets BaseDamage and CritMultiplier */
-	BaseDamage = 20.0f;
-	CritMultiplier = 2.0f;
+	BaseDamage = 20.0f; // Sets BaseDamage
+	CritMultiplier = 2.0f; // Sets CritMultiplier
 }
 
 void ABullet::BeginPlay()
@@ -48,15 +45,14 @@ void ABullet::Tick(float DeltaTime)
 void ABullet::OnHit(UPrimitiveComponent *HitComp, AActor *OtherActor,
 	UPrimitiveComponent *OtherComp, FVector NormalImpulse, const FHitResult &Hit)
 {
-	/** Checks if bullet collided with a BasicEnemy */
+	// Checks if bullet collided with a BasicEnemy
 	if (ABasicEnemy *BEnemy = Cast<ABasicEnemy>(Hit.GetActor()))
 	{
-		/** Checks if BasicEnemy is not alert */
+		// Checks if BasicEnemy is not alert
 		if (!BEnemy->IsAlert())
 		{
-			/** Assigns BaseDamage * CritMultiplier */
-			BEnemy->ReceiveDamage(BaseDamage * CritMultiplier);
-			/** Plays CritSound */
+			BEnemy->ReceiveDamage(BaseDamage * CritMultiplier); // Assigns BaseDamage * CritMultiplier
+			// Plays CritSound
 			if (CritSound != nullptr)
 			{
 				UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
@@ -65,13 +61,10 @@ void ABullet::OnHit(UPrimitiveComponent *HitComp, AActor *OtherActor,
 		}
 		else
 		{
-			/** Assigns BaseDamage */
-			BEnemy->ReceiveDamage(BaseDamage);
+			BEnemy->ReceiveDamage(BaseDamage); // Assigns BaseDamage
 		}
-		/** Plays BasicEnemy's OnHitSound and set's alert to true */
-		BEnemy->PlayOnHitSound();
-		BEnemy->SetAlert(true);
+		BEnemy->PlayOnHitSound(); // Plays BasicEnemy's OnHitSound
+		BEnemy->SetAlert(true); // Sets BasiEnemy's alert to true
 	}
-	/** Destroys the bullet */
-	Destroy();
+	Destroy(); // Destroys this actor
 }

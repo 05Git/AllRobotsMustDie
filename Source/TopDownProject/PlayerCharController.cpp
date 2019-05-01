@@ -3,6 +3,5 @@
 
 APlayerCharController::APlayerCharController()
 {
-	/** Makes the mouse cursor visible in game */
-	bShowMouseCursor = true;
+	bShowMouseCursor = true; // Makes the mouse cursor visible in game
 }
