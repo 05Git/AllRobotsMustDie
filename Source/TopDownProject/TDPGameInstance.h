@@ -23,8 +23,22 @@ public:
 
 	/** Sets Volume */
 	UFUNCTION(BlueprintCallable, Category = "Volume")
-		void SetVolume(float Volume);
+		void SetVolume(float Value);
+
+	/** Returns Score */
+	UFUNCTION(BlueprintCallable, Category = "Score")
+		float GetScore();
+
+	/** Adds Score */
+	UFUNCTION(BlueprintCallable, Category = "Score")
+		void AddScore(float Value);
+	
+	/** Decreases Score */
+	UFUNCTION(BlueprintCallable, Category = "Score")
+		void MinusScore(float Value);
 
 private:
 	float Volume; /**< Volume determines the volume multiplier used when playing sound files */
+
+	float Score; /**< Score stores the player's current score value */
 };

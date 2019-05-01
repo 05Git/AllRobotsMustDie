@@ -69,15 +69,17 @@ void APlayerChar::Tick(float DeltaTime)
 		UWidgetBlueprintLibrary::SetInputMode_GameOnly(Controller);
 	}
 
-	// Is Health is equal to or less then 0, the game is paused and the GameOver widget is created
+	// Checks if Health is equal to or less than 0
 	if (GetHealthRemaining() <= 0)
 	{
-		Controller->SetPause(true);
-		Paused = true;
+		Controller->SetPause(true); // Pauses the game
+		Paused = true; // Sets Paused to true
+		UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+		Instance->MinusScore(Instance->GetScore()); // Sets Score to 0
 		CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), GameOver);
 		if (CurrentWidget)
 		{
-			CurrentWidget->AddToViewport();
+			CurrentWidget->AddToViewport(); // Adds gameOver widget to viewport
 		}
 	}
 }
@@ -185,8 +187,9 @@ void APlayerChar::ReceiveDamage(float IncomingDamage)
 	// Checks if IncomingDamage is greater than or equal to 0
 	if (IncomingDamage >= 0)
 	{
-		// Reduces Health by IncomingDamage
-		Health -= IncomingDamage;
+		Health -= IncomingDamage; // Reduces Health by IncomingDamage
+		UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+		Instance->MinusScore(20.0f); // Reduces Score by 20
 	}
 }
 

@@ -52,10 +52,11 @@ void ABullet::OnHit(UPrimitiveComponent *HitComp, AActor *OtherActor,
 		if (!BEnemy->IsAlert())
 		{
 			BEnemy->ReceiveDamage(BaseDamage * CritMultiplier); // Assigns BaseDamage * CritMultiplier
+			UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+			Instance->AddScore(15.0f); // Increases Score by 15
 			// Plays CritSound
 			if (CritSound != nullptr)
 			{
-				UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 				UGameplayStatics::PlaySoundAtLocation(this, CritSound, this->GetActorLocation(), Instance->GetVolume());
 			}
 		}

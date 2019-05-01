@@ -28,10 +28,10 @@ void APlayerHUD::DrawHUD()
 	// Checks if Player is active
 	if (Player)
 	{
-		CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), Health); // Sets CurrentWidget to the Health widget
-		// Checks if CurrentWidget is active
-		if (CurrentWidget)
+		// Checks if PlayerInfo is not a nullptr
+		if (PlayerInfo != nullptr)
 		{
+			CurrentWidget = CreateWidget<UUserWidget>(GetWorld(), PlayerInfo); // Sets CurrentWidget to the Health widget
 			CurrentWidget->AddToViewport(); // Adds CurrentWidget to viewport
 		}
 	}

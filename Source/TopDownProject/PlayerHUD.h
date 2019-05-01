@@ -27,7 +27,7 @@ private:
 		UFont *Font; /**< Font used by the HUD */
 
 	UPROPERTY(EditAnywhere, Category = "Widgets")
-		TSubclassOf<class UUserWidget> Health; /**< Health bar to show the player's health */
+		TSubclassOf<class UUserWidget> PlayerInfo; /**< Health bar to show the player's health */
 
 	UPROPERTY()
 		class UUserWidget *CurrentWidget; /**< The current widget to draw on the HUD */

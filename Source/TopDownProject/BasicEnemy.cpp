@@ -98,10 +98,11 @@ void ABasicEnemy::PlayOnHitSound()
 
 void ABasicEnemy::DeathSequence()
 {
+	UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+	Instance->AddScore(30.0f); // Increases score by 30
 	// Plays ExplosionSound
 	if (ExplosionSound != nullptr)
 	{
-		UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
 		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, this->GetActorLocation(), Instance->GetVolume());
 	}
 }
