@@ -59,6 +59,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		float GetHealth();
 
+	/** Returns AnimSpeed */
+	UFUNCTION(BlueprintCallable, Category = "Animation")
+		float GetAnimX();
+
+	/** Returns AnimDirection */
+	UFUNCTION(BlueprintCallable, Category = "Animation")
+		float GetAnimY();
+
 	/** RecieveDamage function from DamageInterface */
 	UFUNCTION(BlueprintCallable, Category = "Health")
 		virtual void ReceiveDamage(float IncomingDamage) override;
@@ -79,6 +87,10 @@ private:
 	float MoveSpeedRight; /**< MoveSpeedRight determines movement along the Y axis */
 
 	float FireOffset; /**< FireOffset determines the distance from the player to spawn a bullet */
+
+	float AnimX; /**< AnimX determines the value for Speed in the player's animation blueprint */
+
+	float AnimY; /**< AnimY determines the value for Direction in the player's animation blueprint */
 
 	FVector MousePos; /**< MousePos stores the cursor position */
 

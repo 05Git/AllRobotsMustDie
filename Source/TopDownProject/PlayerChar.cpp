@@ -25,6 +25,8 @@ APlayerChar::APlayerChar()
 	MoveSpeedUp = 0.0f; // Sets initial value of MoveSpeedUp
 	MoveSpeedRight = 0.0f; // Sets initial value of MoveSpeedRight
 	FireOffset = 80.0f; // Sets initial value of FireOffset
+	AnimX = 0.0f; // Sets initial value of AnimX
+	AnimY = 0.0f; // Sets initial value of AnimY
 	IsAttacking = false; // Sets initial value of IsAttacking
 	MouseHeld = false; // Sets initial value of MouseHeld
 	Paused = false; // Sets initial value of Paused
@@ -132,10 +134,19 @@ void APlayerChar::MoveUp(float Value)
 	if (Value != 0.0f)
 	{
 		MoveSpeedUp = Value * 800.0f; // Sets MoveSpeedUp to Value * 800.0f
+		if (Value > 0.0f)
+		{
+			AnimY = 100.0f; // Sets AnimY to 100
+		}
+		else
+		{
+			AnimY = -100.0f; // Sets AnimY to -100
+		}
 	}
 	else
 	{
 		MoveSpeedUp = 0.0f; // Sets MoveSpeedUp to 0.0f
+		AnimY = 0.0f; // Sets AnimY to 0
 	}
 }
 
@@ -145,10 +156,19 @@ void APlayerChar::MoveRight(float Value)
 	if (Value != 0.0f)
 	{
 		MoveSpeedRight = Value * 800.0f; // Sets MoveSpeedRight to Value * 800.0f
+		if (Value > 0.0f)
+		{
+			AnimX = 100.0f; // Sets AnimX to 100
+		}
+		else
+		{
+			AnimX = -100.0f; // Sets AnimX to -100
+		}
 	}
 	else
 	{
 		MoveSpeedRight = 0.0f; // Sets MoveSpeedRight to 0.0f
+		AnimX = 0.0f; // Sets AnimX to 0
 	}
 }
 
@@ -180,6 +200,16 @@ void APlayerChar::SetPaused(bool Pause)
 float APlayerChar::GetHealth()
 {
 	return Health / MaxHealth; // Returns Health / MaxHealth
+}
+
+float APlayerChar::GetAnimX()
+{
+	return AnimX;
+}
+
+float APlayerChar::GetAnimY()
+{
+	return AnimY;
 }
 
 void APlayerChar::ReceiveDamage(float IncomingDamage)
