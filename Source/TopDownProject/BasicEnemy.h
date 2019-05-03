@@ -73,14 +73,14 @@ public:
 	/** Performs actions associated with this character's death */
 	void DeathSequence();
 
-	/** Calculates this characters field of vision */
-	float CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot);
-
-	/** Checks if the player character is in range of this character's fov */
-	bool PlayerInFOV(float Angle);
+	/** Calculates this characters field of vision and checks if the player is in it */
+	bool CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot);
 
 	/** Calculates the distance between two vectors */
 	float CalcDist(FVector Vect1, FVector Vect2);
+
+	/** Performs a raycast, returns the first actor the raycast collides with */
+	AActor *Raycast(FVector Start, FVector End);
 
 	/** Converts a radian to degrees */
 	float ConvRadianToDegree(float Rad);

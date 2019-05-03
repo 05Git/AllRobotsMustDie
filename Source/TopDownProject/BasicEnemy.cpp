@@ -107,7 +107,7 @@ void ABasicEnemy::DeathSequence()
 	}
 }
 
-float ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
+bool ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
 {
 	float Yaw = ConvDegreeToRadian(Rot.Yaw); // Converts Rot.Yaw to Radian
 	// Gets X and Y orientation of Rot
@@ -124,13 +124,8 @@ float ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
 	ToPlayer.Y = ToPlayer.Y / Magnitude;
 	ToPlayer.Z = ToPlayer.Z / Magnitude;
 	float Dot = (ToPlayer.X * Orientation.X) + (ToPlayer.Y * Orientation.Y) + (ToPlayer.Z * Orientation.Z); // Gets dot product of ToPlayer and Orientation
-	return FMath::Acos(Dot); // Returns Acos of dot product
-}
-
-bool ABasicEnemy::PlayerInFOV(float Angle)
-{
-	// Checks if Angle is within field of view, returns true if it is and false if it isn't
-	if (ConvRadianToDegree(Angle) < 160 / 2)
+	// Checks if the dot product is within field of view, returns true if it is and false if it isn't
+	if (ConvRadianToDegree(FMath::Acos(Dot) < 160 / 2)
 	{
 		return true;
 	}
@@ -148,6 +143,19 @@ float ABasicEnemy::CalcDist(FVector Vect1, FVector Vect2)
 	Diff.Y = FMath::Square(Vect2.Y - Vect1.Y);
 	Diff.Z = FMath::Square(Vect2.Z - Vect1.Z);
 	return FMath::Sqrt(Diff.X + Diff.Y + Diff.Z); // Returns the square root of the squared differences added together
+}
+
+AActor *ABasicEnemy::Raycast(FVector Start, FVector End)
+{
+	FHitResult HitResult = FHitResult(); // Hit result used by the raycast
+	FCollisionQueryParams Parameters = FCollisionQueryParams(); // Parameters used by the raycast
+	Parameters.AddIgnoredActor(this); // Sets the raycast to ignore this actor
+	// Performs a raycast and checks if it's valid
+	if (GetWorld()->LineTraceSingleByChannel(HitResult, Start, End, ECC_WorldDynamic, Parameters))
+	{
+		return HitResult.GetActor(); // Returns the actor the raycast collided with
+	}
+	return false; // Returns false if the raycast was invalid
 }
 
 float ABasicEnemy::ConvRadianToDegree(float Rad)

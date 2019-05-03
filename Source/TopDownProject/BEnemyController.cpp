@@ -53,14 +53,16 @@ void ABEnemyController::Tick(float DeltaTime)
 	{
 		// Calculates distance between player and possessed pawn
 		Distance = PawnAsNPC->CalcDist(Player->GetActorLocation(), PawnAsNPC->GetActorLocation());
-		// Calculates possessed pawn's FOV
-		FOV = PawnAsNPC->CalcFOV(Player->GetActorLocation(), PawnAsNPC->GetActorLocation(), PawnAsNPC->GetActorRotation());
-		// Determines if the player is in possessed pawn's FOV
-		InFOV = PawnAsNPC->PlayerInFOV(FOV);
+		// Calculates possessed pawn's FOV and checks if the player is in it
+		InFOV = PawnAsNPC->CalcFOV(Player->GetActorLocation(), PawnAsNPC->GetActorLocation(), PawnAsNPC->GetActorRotation());
 		// Checks if InFOV is true and Distance is less than or equal to LengthOfSight
 		if (InFOV && Distance <= LengthOfSight)
 		{
-			PawnAsNPC->SetAlert(true); // Sets possessed pawn's Alert to true
+			// Performs a raycast and checks if it collided with the player
+			if (APlayerChar *OtherActor = Cast<APlayerChar>(PawnAsNPC->Raycast(PawnAsNPC->GetActorLocation(), Player->GetActorLocation())))
+			{
+				PawnAsNPC->SetAlert(true); // Sets possessed pawn's Alert to true
+			}
 		}
 	}
 
@@ -75,8 +77,11 @@ void ABEnemyController::Tick(float DeltaTime)
 			// Checks if AlertRange is less than or equal to 500.0f and BasicEnemy in iterator is alert
 			if (AlertRange <= 500.0f && Iterator->IsAlert())
 			{
-				// Sets possessed pawn's alert to true
-				PawnAsNPC->SetAlert(true);
+				// Performs a raycast and checks if it collided with another BasicEnemy
+				if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(PawnAsNPC->Raycast(PawnAsNPC->GetActorLocation(), Player->GetActorLocation())))
+				{
+					PawnAsNPC->SetAlert(true); // Sets possessed pawn's alert to true
+				}
 			}
 		}
 	}
