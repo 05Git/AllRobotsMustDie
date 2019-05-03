@@ -21,7 +21,6 @@ EBTNodeResult::Type UBTTask_MoveToTarget::ExecuteTask(UBehaviorTreeComponent &Ow
 			// Checks if request is successful or already at goal
 			if (MoveToTarget == EPathFollowingRequestResult::Type::AlreadyAtGoal || MoveToTarget == EPathFollowingRequestResult::Type::RequestSuccessful)
 			{
-				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("HasTarget")), false); // Sets Blackboard bool HasTarget to false
 				return EBTNodeResult::Type::Succeeded; // Returns Succeeded
 			}
 		}

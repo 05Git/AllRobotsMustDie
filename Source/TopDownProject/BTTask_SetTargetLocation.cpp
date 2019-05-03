@@ -22,7 +22,6 @@ EBTNodeResult::Type UBTTask_SetTargetLocation::ExecuteTask(UBehaviorTreeComponen
 				FVector NavTarget = NavSys->GetRandomPointInNavigableRadius(GetWorld(), PawnAsNPC->GetActorLocation(), 200.0f);
 				// Sets Blackboard vairables Target to NavTarget and HasTarget to true
 				Controller->GetBBoard()->SetValueAsVector(FName(TEXT("Target")), NavTarget);
-				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("HasTarget")), true);
 				return EBTNodeResult::Type::Succeeded; // Returns Succeeded
 			}
 		}
