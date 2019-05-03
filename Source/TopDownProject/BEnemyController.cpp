@@ -53,8 +53,10 @@ void ABEnemyController::Tick(float DeltaTime)
 	{
 		// Calculates distance between player and possessed pawn
 		Distance = PawnAsNPC->CalcDist(Player->GetActorLocation(), PawnAsNPC->GetActorLocation());
+		// Calculates possessed pawn's FOV
+		FOV = PawnAsNPC->CalcFOV(Player->GetActorLocation(), PawnAsNPC->GetActorLocation(), PawnAsNPC->GetActorRotation());
 		// Determines if the player is in possessed pawn's FOV
-		InFOV = PawnAsNPC->CalcFOV(Player->GetActorLocation(), PawnAsNPC->GetActorLocation(), PawnAsNPC->GetActorRotation());
+		InFOV = PawnAsNPC->PlayerInFOV(FOV);
 		// Checks if InFOV is true and Distance is less than or equal to LengthOfSight
 		if (InFOV && Distance <= LengthOfSight)
 		{

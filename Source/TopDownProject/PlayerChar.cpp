@@ -14,7 +14,6 @@
 #include "Engine.h"
 #include "Blueprint/UserWidget.h"
 #include "Blueprint/WidgetBlueprintLibrary.h"
-#include "DrawDebugHelpers.h"
 
 APlayerChar::APlayerChar()
 {
@@ -85,10 +84,6 @@ void APlayerChar::Tick(float DeltaTime)
 			CurrentWidget->AddToViewport(); // Adds gameOver widget to viewport
 		}
 	}
-
-	FVector Fwd = this->GetActorForwardVector();
-	FVector View = FVector(Fwd.X + 100.0f, Fwd.Y + 100.0f, Fwd.Z);
-	DrawDebugLine(GetWorld(), Fwd, View, FColor::Blue, false, -1.0f, 0, 5.0f);
 }
 
 void APlayerChar::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)

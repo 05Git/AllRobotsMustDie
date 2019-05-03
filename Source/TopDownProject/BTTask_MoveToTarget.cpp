@@ -2,6 +2,7 @@
 #include "BEnemyController.h"
 #include "BasicEnemy.h"
 #include "BehaviorTree/BlackboardComponent.h"
+#include "Engine.h"
 
 EBTNodeResult::Type UBTTask_MoveToTarget::ExecuteTask(UBehaviorTreeComponent &OwnerComp, uint8 *NodeMemory)
 {
