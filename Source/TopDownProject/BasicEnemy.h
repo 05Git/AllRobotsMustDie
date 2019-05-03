@@ -73,13 +73,10 @@ public:
 	/** Performs actions associated with this character's death */
 	void DeathSequence();
 
-	/** Calculates this characters field of vision */
-	float CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot);
+	/** Calculates this characters field of vision by getting the dot product of two vectors */
+	bool CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot);
 
-	/** Checks if the player character is in range of this character's fov */
-	bool PlayerInFOV(float Angle);
-
-	/** Calculates the distance between two vectors */
+	/** Calculates the distance between two vectors using the 3D Euclidean distance formula */
 	float CalcDist(FVector Vect1, FVector Vect2);
 
 	/** Converts a radian to degrees */

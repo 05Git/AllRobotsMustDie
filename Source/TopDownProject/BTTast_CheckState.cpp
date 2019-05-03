@@ -17,10 +17,17 @@ EBTNodeResult::Type UBTTast_CheckState::ExecuteTask(UBehaviorTreeComponent &Owne
 			if (Controller->GetCurrentState() == IDLE)
 			{
 				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("IsIdle")), true); // Sets Blackboard bool IsIdle to true
+				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("IsChasing")), false); // Sets Blackboard bool IsChasing to false
+			}
+			else if (Controller->GetCurrentState() == CHASE)
+			{
+				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("IsIdle")), false); // Sets Blackboard bool IsIdle to false
+				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("IsChasing")), true); // Sets Blackboard bool IsChasing to true
 			}
 			else
 			{
 				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("IsIdle")), false); // Sets Blackboard bool IsIdle to false
+				Controller->GetBBoard()->SetValueAsBool(FName(TEXT("IsChasing")), false); // Sets Blackboard bool IsChasing to false
 			}
 			return EBTNodeResult::Type::Succeeded; // Returns Succeeded
 		}

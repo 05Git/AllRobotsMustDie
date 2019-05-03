@@ -107,7 +107,7 @@ void ABasicEnemy::DeathSequence()
 	}
 }
 
-float ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
+bool ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
 {
 	float Yaw = ConvDegreeToRadian(Rot.Yaw); // Converts Rot.Yaw to Radian
 	// Gets X and Y orientation of Rot
@@ -124,19 +124,14 @@ float ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
 	ToPlayer.Y = ToPlayer.Y / Magnitude;
 	ToPlayer.Z = ToPlayer.Z / Magnitude;
 	float Dot = (ToPlayer.X * Orientation.X) + (ToPlayer.Y * Orientation.Y) + (ToPlayer.Z * Orientation.Z); // Gets dot product of ToPlayer and Orientation
-	return FMath::Acos(Dot); // Returns Acos of dot product
-}
-
-bool ABasicEnemy::PlayerInFOV(float Angle)
-{
-	// Checks if Angle is within field of view, returns true if it is and false if it isn't
-	if (ConvRadianToDegree(Angle) < 160 / 2)
+	// Checks if the player is within the fov
+	if (ConvRadianToDegree(FMath::Acos(Dot)) <= 160 / 2)
 	{
-		return true;
+		return true; // Returns true if the player is in the FOV
 	}
 	else
 	{
-		return false;
+		return false; // Returns false if the player is outside the FOV
 	}
 }
 

@@ -72,8 +72,6 @@ public:
 private:
 	float Distance; /**< Distance determines how far away the player is from the possessed pawn */
 
-	float FOV; /**< FOV determines if the player is in the possessed pawn's field of vision */
-
 	float LengthOfSight; /**< LengthOfSight determines the maximum distance at which the possessed pawn is able to see the player */
 
 	bool InFOV; /**< InFOV determines if the player currently in the possessed pawn's field of vision */
