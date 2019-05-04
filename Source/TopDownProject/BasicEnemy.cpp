@@ -125,7 +125,7 @@ bool ABasicEnemy::CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot)
 	ToPlayer.Z = ToPlayer.Z / Magnitude;
 	float Dot = (ToPlayer.X * Orientation.X) + (ToPlayer.Y * Orientation.Y) + (ToPlayer.Z * Orientation.Z); // Gets dot product of ToPlayer and Orientation
 	// Checks if the dot product is within field of view, returns true if it is and false if it isn't
-	if (ConvRadianToDegree(FMath::Acos(Dot) < 160 / 2)
+	if (ConvRadianToDegree(FMath::Acos(Dot) < 160 / 2))
 	{
 		return true;
 	}

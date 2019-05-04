@@ -78,7 +78,7 @@ void ABEnemyController::Tick(float DeltaTime)
 			if (AlertRange <= 500.0f && Iterator->IsAlert())
 			{
 				// Performs a raycast and checks if it collided with another BasicEnemy
-				if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(PawnAsNPC->Raycast(PawnAsNPC->GetActorLocation(), Player->GetActorLocation())))
+				if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(PawnAsNPC->Raycast(PawnAsNPC->GetActorLocation(), Iterator->GetActorLocation())))
 				{
 					PawnAsNPC->SetAlert(true); // Sets possessed pawn's alert to true
 				}
