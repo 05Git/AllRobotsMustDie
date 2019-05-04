@@ -52,7 +52,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	/** Possesses a Pawn */
-	virtual void Possess(APawn* InPawn) override;
+	virtual void Possess(APawn *InPawn) override;
 
 	/** Unpossesses currently possessed pawn */
 	virtual void UnPossess() override;
