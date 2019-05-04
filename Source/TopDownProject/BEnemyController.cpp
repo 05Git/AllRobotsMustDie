@@ -13,7 +13,6 @@
 
 ABEnemyController::ABEnemyController()
 {
-	
 	PrimaryActorTick.bCanEverTick = true; // Set to call Tick every frame
 
 	// Creates Blackboard and BehaviourTree components
@@ -174,7 +173,7 @@ void ABEnemyController::Tick(float DeltaTime)
 				{
 					// Gets player location and moves possessed pawn towards it using the navmesh
 					FVector PlayerLoc = Player->GetActorLocation();
-					this->MoveToLocation(PlayerLoc, 0.0f, true, true, false, false, 0, true);
+					MoveToLocation(PlayerLoc, 0.0f, true, true, false, false, 0, true);
 				}
 			}
 			// Determines which state to transition to depending on distance and alert status

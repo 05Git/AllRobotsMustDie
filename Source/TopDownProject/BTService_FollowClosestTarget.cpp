@@ -5,17 +5,26 @@
 #include "PlayerChar.h"
 #include "Kismet/GameplayStatics.h"
 #include "EngineUtils.h"
+#include "Engine.h"
 
 void UBTService_FollowClosestTarget::TickNode(UBehaviorTreeComponent &OwnerComp, uint8 *NodeMemory, float DeltaTime)
 {
 	Super::TickNode(OwnerComp, NodeMemory, DeltaTime);
 
+	if (GEngine)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Green, FString::Printf(TEXT("Service starting")));
+	}
 	Controller = Cast<AFollowActorController>(OwnerComp.GetAIOwner());
 	if (Controller != nullptr)
 	{
 		Actor = Cast<AFollowActor>(Controller->GetPawn());
 		if (Actor != nullptr)
 		{
+			if (GEngine)
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Green, FString::Printf(TEXT("Finding closest actor...")));
+			}
 			ClosestActor = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 			ClosestDistance = 500.0f;
 			for (TActorIterator<ABasicEnemy> Iterator(GetWorld()); Iterator; ++Iterator)

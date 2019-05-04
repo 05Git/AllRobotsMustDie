@@ -22,7 +22,7 @@ protected:
 	virtual void BeginPlay() override;
 
 	UPROPERTY(BlueprintReadonly, Category = "Pawn")
-		class AFollowActor *PawnAsNPC; /**< Actor for the controller to possess */
+		class AFollowingPawn *PawnAsNPC; /**< Actor for the controller to possess */
 
 	UPROPERTY(BlueprintReadWrite, Category = "Behavior")
 		class UBlackboardComponent *BlackboardComp; /**< BlackboardComponent for this controller to use, taken from possessed actor */
@@ -40,6 +40,11 @@ public:
 	/** Unpossesses currently possessed pawn */
 	virtual void UnPossess() override;
 
-private:
+	void SelectTarget();
 
+	void Move();
+	
+	UBlackboardComponent *GetBBoard();
+
+	UBehaviorTreeComponent *GetBTree();
 };
