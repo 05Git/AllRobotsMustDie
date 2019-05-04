@@ -3,7 +3,6 @@
 #include "FollowActorController.h"
 #include "BasicEnemy.h"
 #include "PlayerChar.h"
-#include "BehaviorTree/BlackboardComponent.h"
 #include "Kismet/GameplayStatics.h"
 #include "EngineUtils.h"
 
@@ -24,7 +23,7 @@ void UBTService_FollowClosestTarget::TickNode(UBehaviorTreeComponent &OwnerComp,
 				float Distance = Iterator->CalcDist(Actor->GetActorLocation(), Iterator->GetActorLocation());
 				if (Distance < ClosestDistance)
 				{
-					if (ABasicEnemy *Actor = Cast<ABasicEnemy>(Iterator->Raycast(Actor->GetActorLocation(), Iterator->GetActorLocation())))
+					if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(Iterator->Raycast(Actor->GetActorLocation(), Iterator->GetActorLocation())))
 					{
 						ClosestActor = *Iterator;
 						ClosestDistance = Distance;

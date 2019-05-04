@@ -46,7 +46,7 @@ public:
 
 	/** Sets Target */
 	UFUNCTION(BlueprintCallable, Category = "Seek Target")
-		AActor SetTarget(AActor *Actor);
+		void SetTarget(AActor *Actor);
 	
 private:
 	float MaxSpeed;

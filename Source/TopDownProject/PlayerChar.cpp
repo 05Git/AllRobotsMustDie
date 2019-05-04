@@ -241,7 +241,7 @@ void APlayerChar::PauseGame()
 		if (CurrentWidget)
 		{
 			CurrentWidget->AddToViewport();
-			UWidgetBlueprintLibrary::SetInputMode_UIOnly(Controller, CurrentWidget, false);
+			UWidgetBlueprintLibrary::SetInputMode_UIOnlyEx(Controller, CurrentWidget, EMouseLockMode::DoNotLock);
 		}
 	}
 }

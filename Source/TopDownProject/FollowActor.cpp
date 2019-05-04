@@ -3,6 +3,10 @@
 AFollowActor::AFollowActor()
 {
 	PrimaryActorTick.bCanEverTick = true;
+
+	MaxSpeed = 100.0f;
+	SatisfactionRad = 10.0f;
+	TimeToTarget = 2.0f;
 }
 
 void AFollowActor::BeginPlay()
@@ -35,7 +39,7 @@ AActor *AFollowActor::GetTarget()
 	return Target;
 }
 
-AActor AFollowActor::SetTarget(AActor *Actor)
+void AFollowActor::SetTarget(AActor *Actor)
 {
 	this->Target = Actor;
 }

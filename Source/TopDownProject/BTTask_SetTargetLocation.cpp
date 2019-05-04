@@ -19,7 +19,7 @@ EBTNodeResult::Type UBTTask_SetTargetLocation::ExecuteTask(UBehaviorTreeComponen
 			if (NavSys)
 			{
 				// Gets a random vector within a radious of 200.0f of the enemy pawn
-				FVector NavTarget = NavSys->GetRandomPointInNavigableRadius(GetWorld(), PawnAsNPC->GetActorLocation(), 200.0f);
+				FVector NavTarget = NavSys->GetRandomReachablePointInRadius(GetWorld(), PawnAsNPC->GetActorLocation(), 200.0f);
 				// Sets Blackboard vairables Target to NavTarget and HasTarget to true
 				Controller->GetBBoard()->SetValueAsVector(FName(TEXT("Target")), NavTarget);
 				return EBTNodeResult::Type::Succeeded; // Returns Succeeded
