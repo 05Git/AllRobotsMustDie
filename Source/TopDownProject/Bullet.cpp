@@ -65,7 +65,6 @@ void ABullet::OnHit(UPrimitiveComponent *HitComp, AActor *OtherActor,
 			BEnemy->ReceiveDamage(BaseDamage); // Assigns BaseDamage
 		}
 		BEnemy->PlayOnHitSound(); // Plays BasicEnemy's OnHitSound
-		BEnemy->SetAlert(true); // Sets BasiEnemy's alert to true
 	}
 	Destroy(); // Destroys this actor
 }

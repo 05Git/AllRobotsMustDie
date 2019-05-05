@@ -62,7 +62,8 @@ public:
 	void PlayOnHitSound();
 
 	/** RecieveDamage function from DamageInterface */
-	virtual void ReceiveDamage(float IncomingDamage) override;
+	UFUNCTION(BlueprintCallable, Category = "Health")
+		virtual void ReceiveDamage(float IncomingDamage) override;
 
 	/** Sets Health */
 	void SetHealth(float Health);
@@ -76,7 +77,7 @@ public:
 	/** Calculates this characters field of vision and checks if the player is in it */
 	bool CalcFOV(FVector Vect1, FVector Vect2, FRotator Rot);
 
-	/** Calculates the distance between two vectors */
+	/** Calculates the distance between two vectors in 3D space */
 	float CalcDist(FVector Vect1, FVector Vect2);
 
 	/** Performs a raycast, returns the first actor the raycast collides with */

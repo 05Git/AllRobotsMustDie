@@ -34,6 +34,7 @@ void ABasicEnemy::ReceiveDamage(float IncomingDamage)
 	{
 		Health -= IncomingDamage; // Reduces health by IncomingDamage
 	}
+	SetAlert(true); // Sets alert to true
 }
 
 float ABasicEnemy::GetHealthRemaining()

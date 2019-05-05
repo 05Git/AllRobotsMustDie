@@ -1,21 +1,23 @@
 #include "FollowingPawn.h"
 #include "PlayerChar.h"
 #include "BasicEnemy.h"
+#include "TDPGameInstance.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BehaviorTree/BehaviorTree.h"
 #include "Kismet/GameplayStatics.h"
+#include "Sound/SoundBase.h"
 #include "EngineUtils.h"
-#include "Engine.h"
 
 // Sets default values
 AFollowingPawn::AFollowingPawn()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = true; // Set this pawn to call Tick() every frame
 	
-	MaxSpeed = 100.0f;
-	SatisfactionRad = 10.0f;
-	TimeToTarget = 2.0f;
+	MaxSpeed = 1000.0f; // Sets initial value for MaxSpeed
+	SatisfactionRad = 200.0f; // Sets initial value for SatisfactionRad
+	TimeToTarget = 0.6f; // Sets initial value for TimeToTarget
+	OverlappingEnemy = false; // Sets initial value for OverlappingEnemy
+	Attacking = false; // Sets initial value for Attacking
 }
 
 // Called when the game starts or when spawned
@@ -29,6 +31,13 @@ void AFollowingPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	SelectTarget(); // Selects a target
+	Move(); // Gets new position with movement algorithm
+	FVector NewPosition = GetActorLocation(); // Creates vector for new position
+	NewPosition.X += VelocityOut.X * DeltaTime; // Sets new X position
+	NewPosition.Y += VelocityOut.Y * DeltaTime; // Sets new Y position
+	NewPosition.Z += VelocityOut.Z * DeltaTime; // Sets new Z position
+	SetActorLocation(NewPosition, true); // Moves pawn towards NewPosition
 }
 
 // Called to bind functionality to input
@@ -39,98 +48,146 @@ void AFollowingPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 float AFollowingPawn::GetMaxSpeed()
 {
-	return MaxSpeed;
+	return MaxSpeed; // Returns MaxSpeed
+}
+
+void AFollowingPawn::SetMaxSpeed(float Speed)
+{
+	MaxSpeed = Speed; // Sets MaxSpeed to Speed
 }
 
 float AFollowingPawn::GetSatisfactionRad()
 {
-	return SatisfactionRad;
+	return SatisfactionRad; // Returns SatisfactionRad
+}
+
+void AFollowingPawn::SetSatisfactionRad(float Radius)
+{
+	SatisfactionRad = Radius; // Sets SatisfactionRad to Radius
 }
 
 float AFollowingPawn::GetTimeToTarget()
 {
-	return TimeToTarget;
+	return TimeToTarget; // Returns TimeToTarget
+}
+
+void AFollowingPawn::SetTimeToTarget(float Time)
+{
+	TimeToTarget = Time; // Sets TimeToTarget to Time
+}
+
+bool AFollowingPawn::IsOverlappingEnemy()
+{
+	return OverlappingEnemy; // Returns OverlappingEnemy
+}
+
+void AFollowingPawn::SetIsOverlappingEnemy(bool Overlap)
+{
+	OverlappingEnemy = Overlap; // Sets OverlappingEnemy to Overlap
+}
+
+bool AFollowingPawn::IsAttacking()
+{
+	return Attacking; // Returns Attacking
+}
+
+void AFollowingPawn::SetIsAttacking(bool Attack)
+{
+	Attacking = Attack; // Sets Attacking to Attack
+}
+
+void AFollowingPawn::PlayExplosionSound()
+{
+	// Plays ExplosionSound
+	if (ExplosionSound != nullptr)
+	{
+		UTDPGameInstance *Instance = Cast<UTDPGameInstance>(UGameplayStatics::GetGameInstance(GetWorld()));
+		UGameplayStatics::PlaySoundAtLocation(this, ExplosionSound, this->GetActorLocation(), Instance->GetVolume());
+	}
 }
 
 AActor *AFollowingPawn::GetTarget()
 {
-	return Target;
+	return Target; // Returns Target
 }
 
 void AFollowingPawn::SetTarget(AActor *Actor)
 {
-	this->Target = Actor;
+	Target = Actor; // Sets Target to Actor
 }
 
 void AFollowingPawn::SelectTarget()
 {
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, FString::Printf(TEXT("Finding target...")));
-	}
 	APlayerChar *Player = Cast<APlayerChar>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
-	Target = Player;
-	float ClosestDistance = 500.0f;
+	Target = Player; // Sets target to player
+	SatisfactionRad = 200.0f; // Sets SatisfactionRad to 200.0f
+	float ClosestDistance = 3000.0f; // Sets ClosestDistance to 3000.0f, used to determine closest enemy
+	// Iterates through each BasicEnemy in the level
 	for (TActorIterator<ABasicEnemy> Iterator(GetWorld()); Iterator; ++Iterator)
 	{
-		float Distance = Iterator->CalcDist(this->GetActorLocation(), Iterator->GetActorLocation());
+		float Distance = Iterator->CalcDist(Iterator->GetActorLocation(), GetActorLocation()); // Calculates distance between Iterator and pawn
+		// Checks if Distance is less than ClosestDistance
 		if (Distance < ClosestDistance)
 		{
-			if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(Iterator->Raycast(this->GetActorLocation(), Iterator->GetActorLocation())))
+			// Performs a raycast to enemy, checks if returned actor was a BasicEnemy
+			if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(Iterator->Raycast(GetActorLocation(), Iterator->GetActorLocation())))
 			{
-				Target = *Iterator;
-				ClosestDistance = Distance;
+				Target = OtherActor; // Sets Target to OtherActor
+				SatisfactionRad = 10.0f; // Sets SatisfactionRad to 10.0f
+				ClosestDistance = Distance; // Sets ClosestDistance to Distance
 			}
 		}
-	}
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, FString::Printf(TEXT("Target set")));
 	}
 }
 
 void AFollowingPawn::Move()
 {
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, FString::Printf(TEXT("Starting movement calculations...")));
-	}
-	FVector Position = this->GetActorLocation();
-	FVector Target = GetTarget()->GetActorLocation();
-	FVector VelocityOut;
-	float Magnitude;
-	VelocityOut.X = Target.X - Position.X;
-	VelocityOut.Y = Target.Y - Position.Y;
-	VelocityOut.Z = Target.Z - Position.Z;
+	FVector Position = GetActorLocation(); // Gets pawn's position
+	FVector Target = GetTarget()->GetActorLocation(); // Gets Target's position
+	float Magnitude; // Variable to store the magnitude of VelocityOut
+	VelocityOut.X = Target.X - Position.X; // Sets VelocityOut.X
+	VelocityOut.Y = Target.Y - Position.Y; // Sets VelocityOut.Y
+	VelocityOut.Z = Target.Z - Position.Z; // Sets VelocityOut.Z
+	// Sets Magnitude of VelocityOut
 	Magnitude = FMath::Sqrt((VelocityOut.X * VelocityOut.X)
 		+ (VelocityOut.Y * VelocityOut.Y)
 		+ (VelocityOut.Z * VelocityOut.Z));
-	if (Magnitude < GetSatisfactionRad())
+	// Checks if Magnitude is less than SatisfactionRad
+	if (Magnitude < SatisfactionRad)
 	{
+		// Sets VelocityOut to 0.0f and returns
 		VelocityOut.X = 0.0f;
 		VelocityOut.Y = 0.0f;
 		VelocityOut.Z = 0.0f;
 		return;
 	}
-	VelocityOut.X /= GetTimeToTarget();
-	VelocityOut.Y /= GetTimeToTarget();
-	VelocityOut.Z /= GetTimeToTarget();
+	// Divides VelocityOut by TimeToTarget
+	VelocityOut.X /= TimeToTarget;
+	VelocityOut.Y /= TimeToTarget;
+	VelocityOut.Z /= TimeToTarget;
+	// Sets new value of Magnitude
 	Magnitude = FMath::Sqrt((VelocityOut.X * VelocityOut.X)
 		+ (VelocityOut.Y * VelocityOut.Y)
 		+ (VelocityOut.Z * VelocityOut.Z));
-	if (Magnitude > GetMaxSpeed())
+	// Checks if Magnitude is greater than MaxSpeed
+	if (Magnitude > MaxSpeed)
 	{
+		// Divides VelocityOut by Magnitude
 		VelocityOut.X = VelocityOut.X / Magnitude;
 		VelocityOut.Y = VelocityOut.Y / Magnitude;
 		VelocityOut.Z = VelocityOut.Z / Magnitude;
-		VelocityOut.X *= GetMaxSpeed();
-		VelocityOut.Y *= GetMaxSpeed();
-		VelocityOut.Z *= GetMaxSpeed();
+		// Multiplies VelocityOut by MaxSpeed
+		VelocityOut.X *= MaxSpeed;
+		VelocityOut.Y *= MaxSpeed;
+		VelocityOut.Z *= MaxSpeed;
 	}
-	AddActorLocalOffset(VelocityOut, true);
-	//MoveToLocation(VelocityOut, 5.0f, true, true, false, false, 0, true);
-	if (GEngine)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 1.0f, FColor::Blue, FString::Printf(TEXT("Moved")));
-	}
+}
+
+float AFollowingPawn::CalcDist(FVector Vect1, FVector Vect2)
+{
+	// Squares the difference between X and Y coordinates of Vect1 and Vect2
+	FVector Diff;
+	Diff.X = FMath::Square(Vect2.X - Vect1.X);
+	Diff.Y = FMath::Square(Vect2.Y - Vect1.Y);
+	return FMath::Sqrt(Diff.X + Diff.Y); // Returns the square root of the squared differences added together
 }

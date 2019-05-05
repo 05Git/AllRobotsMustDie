@@ -65,26 +65,6 @@ void ABEnemyController::Tick(float DeltaTime)
 		}
 	}
 
-	// Checks if possessed pawn is alert
-	if (!PawnAsNPC->IsAlert())
-	{
-		// Iterates through each BasicEnemy in the world
-		for (TActorIterator<ABasicEnemy> Iterator(GetWorld()); Iterator; ++Iterator)
-		{
-			// Calculates distance between possessed pawn and currrent BasicEnemy in iterator
-			float AlertRange = PawnAsNPC->CalcDist(Iterator->GetActorLocation(), PawnAsNPC->GetActorLocation());
-			// Checks if AlertRange is less than or equal to 500.0f and BasicEnemy in iterator is alert
-			if (AlertRange <= 500.0f && Iterator->IsAlert())
-			{
-				// Performs a raycast and checks if it collided with another BasicEnemy
-				if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(PawnAsNPC->Raycast(PawnAsNPC->GetActorLocation(), Iterator->GetActorLocation())))
-				{
-					PawnAsNPC->SetAlert(true); // Sets possessed pawn's alert to true
-				}
-			}
-		}
-	}
-
 	// Sets rotation of possessed pawn to face forward
 	FRotator Rotation = FRotator(0.0f, PawnAsNPC->GetActorRotation().Yaw, 0.0f);
 	PawnAsNPC->SetActorRotation(Rotation);
@@ -132,6 +112,25 @@ void ABEnemyController::Tick(float DeltaTime)
 			CurrentEvent = onUpdate;
 			break;
 		case onUpdate:
+			// Checks if possessed pawn is alert
+			if (!PawnAsNPC->IsAlert())
+			{
+				// Iterates through each BasicEnemy in the world
+				for (TActorIterator<ABasicEnemy> Iterator(GetWorld()); Iterator; ++Iterator)
+				{
+					// Calculates distance between possessed pawn and currrent BasicEnemy in iterator
+					float AlertRange = PawnAsNPC->CalcDist(Iterator->GetActorLocation(), PawnAsNPC->GetActorLocation());
+					// Checks if AlertRange is less than or equal to 500.0f and BasicEnemy in iterator is alert
+					if (AlertRange <= 500.0f && Iterator->IsAlert())
+					{
+						// Performs a raycast and checks if it collided with another BasicEnemy
+						if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(PawnAsNPC->Raycast(PawnAsNPC->GetActorLocation(), Iterator->GetActorLocation())))
+						{
+							PawnAsNPC->SetAlert(true); // Sets possessed pawn's alert to true
+						}
+					}
+				}
+			}
 			// Determines which state to transition to depending on distance and alert status
 			if (Distance <= LengthOfSight && Distance > 100.0f && PawnAsNPC->IsAlert())
 			{
