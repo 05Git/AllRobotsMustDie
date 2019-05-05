@@ -8,7 +8,6 @@
 #include "Sound/SoundBase.h"
 #include "EngineUtils.h"
 
-// Sets default values
 AFollowingPawn::AFollowingPawn()
 {
 	PrimaryActorTick.bCanEverTick = true; // Set this pawn to call Tick() every frame
@@ -20,13 +19,11 @@ AFollowingPawn::AFollowingPawn()
 	Attacking = false; // Sets initial value for Attacking
 }
 
-// Called when the game starts or when spawned
 void AFollowingPawn::BeginPlay()
 {
 	Super::BeginPlay();
 }
 
-// Called every frame
 void AFollowingPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
@@ -40,7 +37,6 @@ void AFollowingPawn::Tick(float DeltaTime)
 	SetActorLocation(NewPosition, true); // Moves pawn towards NewPosition
 }
 
-// Called to bind functionality to input
 void AFollowingPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);

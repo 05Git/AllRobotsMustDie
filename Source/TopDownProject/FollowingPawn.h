@@ -10,18 +10,18 @@ class TOPDOWNPROJECT_API AFollowingPawn : public APawn
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this pawn's properties
+	/** Sets default values for this pawn's properties */
 	AFollowingPawn();
 
 protected:
-	// Called when the game starts or when spawned
+	/** Called when the game starts or when spawned */
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
+	/** Called every frame */
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
+	/** Called to bind functionality to input */
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	/** Returns MaxSpeed */
