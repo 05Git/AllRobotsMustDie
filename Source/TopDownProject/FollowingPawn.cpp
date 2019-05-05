@@ -22,13 +22,14 @@ AFollowingPawn::AFollowingPawn()
 void AFollowingPawn::BeginPlay()
 {
 	Super::BeginPlay();
+	APlayerChar *Player = Cast<APlayerChar>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+	Target = Player; // Sets target to player
 }
 
 void AFollowingPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	SelectTarget(); // Selects a target
 	Move(); // Gets new position with movement algorithm
 	FVector NewPosition = GetActorLocation(); // Creates vector for new position
 	NewPosition.X += VelocityOut.X * DeltaTime; // Sets new X position
@@ -110,30 +111,6 @@ AActor *AFollowingPawn::GetTarget()
 void AFollowingPawn::SetTarget(AActor *Actor)
 {
 	Target = Actor; // Sets Target to Actor
-}
-
-void AFollowingPawn::SelectTarget()
-{
-	APlayerChar *Player = Cast<APlayerChar>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
-	Target = Player; // Sets target to player
-	SatisfactionRad = 200.0f; // Sets SatisfactionRad to 200.0f
-	float ClosestDistance = 3000.0f; // Sets ClosestDistance to 3000.0f, used to determine closest enemy
-	// Iterates through each BasicEnemy in the level
-	for (TActorIterator<ABasicEnemy> Iterator(GetWorld()); Iterator; ++Iterator)
-	{
-		float Distance = Iterator->CalcDist(Iterator->GetActorLocation(), GetActorLocation()); // Calculates distance between Iterator and pawn
-		// Checks if Distance is less than ClosestDistance
-		if (Distance < ClosestDistance)
-		{
-			// Performs a raycast to enemy, checks if returned actor was a BasicEnemy
-			if (ABasicEnemy *OtherActor = Cast<ABasicEnemy>(Iterator->Raycast(GetActorLocation(), Iterator->GetActorLocation())))
-			{
-				Target = OtherActor; // Sets Target to OtherActor
-				SatisfactionRad = 10.0f; // Sets SatisfactionRad to 10.0f
-				ClosestDistance = Distance; // Sets ClosestDistance to Distance
-			}
-		}
-	}
 }
 
 void AFollowingPawn::Move()

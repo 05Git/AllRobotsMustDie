@@ -76,9 +76,6 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Seek Target")
 		void SetTarget(AActor *Actor);
 
-	/** Selects a target for the pawn to follow */
-	void SelectTarget();
-
 	/** Determines where the pawn should move to next */
 	void Move();
 
