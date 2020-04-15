@@ -1,0 +1,686 @@
+﻿Log file open, 05/08/19 10:59:12
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogPakFile: Display: Found Pak file ../../../TopDownProject/Content/Paks/TopDownProject-WindowsNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../TopDownProject/Content/Paks/TopDownProject-WindowsNoEditor.pak.
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 1.591066
+LogPluginManager: Warning: Plugin 'StaticMeshEditorExtension' exists at '../../../Enterprise/Plugins/Editor/StaticMeshEditorExtension/StaticMeshEditorExtension.uplugin' and '../../../Enterprise/Plugins/Editor/StaticMeshEditorExtension/StaticMeshEditorExtension.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithCADImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithCADImporter/DatasmithCADImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithCADImporter/DatasmithCADImporter.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithFBXImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithFBXImporter/DatasmithFBXImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithFBXImporter/DatasmithFBXImporter.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithImporter/DatasmithImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithImporter/DatasmithImporter.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithMDLImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithMDLImporter/DatasmithMDLImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithMDLImporter/DatasmithMDLImporter.uplugin' - second location will be ignored
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin DatasmithFBXImporter
+LogPluginManager: Mounting plugin DatasmithMDLImporter
+LogPluginManager: Mounting plugin StaticMeshEditorExtension
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.263s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 7 (Service Pack 1), CPU: Intel(R) Core(TM) i7-6700 CPU @ 3.40GHz, GPU: NVIDIA GeForce GT 720 
+LogInit: Compiled (64-bit): Sep 17 2018 12:36:23
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  
+LogInit: Base Directory: D:/Unreal 4/TopDownProject/WindowsNoEditor/TopDownProject/Binaries/Win64/
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.000s to delete old logs.
+LogInit: Presizing for max 2097152 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+[2019.05.08-09.59.13:280][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2019.05.08-09.59.13:280][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
+[2019.05.08-09.59.13:287][  0]LogHAL: Display: Platform has ~ 16 GB [17097273344 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.05.08-09.59.13:287][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2019.05.08-09.59.13:287][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2019.05.08-09.59.13:287][  0]LogInit: Going up to parent DeviceProfile []
+[2019.05.08-09.59.13:319][  0]LogInit: Computer: MI101-D02
+[2019.05.08-09.59.13:319][  0]LogInit: User: 1703456
+[2019.05.08-09.59.13:319][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.05.08-09.59.13:319][  0]LogInit: High frequency timer resolution =3.328583 MHz
+[2019.05.08-09.59.13:319][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2019.05.08-09.59.13:319][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
+[2019.05.08-09.59.13:319][  0]LogMemory: Process Physical Memory: 55.96 MB used, 55.96 MB peak
+[2019.05.08-09.59.13:319][  0]LogMemory: Process Virtual Memory: 68.17 MB used, 68.17 MB peak
+[2019.05.08-09.59.13:319][  0]LogMemory: Physical Memory: 6097.87 MB used,  10207.36 MB free, 16305.23 MB total
+[2019.05.08-09.59.13:319][  0]LogMemory: Virtual Memory: 288.88 MB used,  10207.36 MB free, 8388608.00 MB total
+[2019.05.08-09.59.13:741][  0]LogInit: Using OS detected language (en-GB).
+[2019.05.08-09.59.13:741][  0]LogInit: Using OS detected locale (en-GB).
+[2019.05.08-09.59.13:741][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2019.05.08-09.59.13:784][  0]LogStreaming: Display: Took  0.043s to InitEngineTextLocalization.
+[2019.05.08-09.59.13:891][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.05.08-09.59.13:891][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.05.08-09.59.13:900][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.08-09.59.13:907][  0]LogD3D11RHI: D3D11 adapters:
+[2019.05.08-09.59.13:921][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GT 720 ' (Feature Level 11_0)
+[2019.05.08-09.59.13:921][  0]LogD3D11RHI:       1986/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.05.08-09.59.13:921][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.05.08-09.59.13:928][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.05.08-09.59.13:928][  0]LogD3D11RHI:     GPU DeviceId: 0x1288 (for the marketing name, search the web for "GPU Device Id")
+[2019.05.08-09.59.13:928][  0]LogWindows: EnumDisplayDevices:
+[2019.05.08-09.59.13:928][  0]LogWindows:    0. 'NVIDIA GeForce GT 720 ' (P:1 D:1)
+[2019.05.08-09.59.13:928][  0]LogWindows:    1. 'NVIDIA GeForce GT 720 ' (P:0 D:0)
+[2019.05.08-09.59.13:928][  0]LogWindows:    2. 'RDPDD Chained DD' (P:0 D:0)
+[2019.05.08-09.59.13:928][  0]LogWindows:    3. 'RDP Encoder Mirror Driver' (P:0 D:0)
+[2019.05.08-09.59.13:928][  0]LogWindows:    4. 'RDP Reflector Display Driver' (P:0 D:0)
+[2019.05.08-09.59.13:929][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:2 
+[2019.05.08-09.59.13:929][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GT 720 
+[2019.05.08-09.59.13:929][  0]LogD3D11RHI:   Driver Version: 348.19 (internal:9.18.13.4819, unified:348.19)
+[2019.05.08-09.59.13:929][  0]LogD3D11RHI:      Driver Date: 5-31-2015
+[2019.05.08-09.59.13:929][  0]LogRHI: Texture pool is 1390 MB (70% of 1986 MB)
+[2019.05.08-09.59.13:939][  0]LogD3D11RHI: NvAPI_D3D_GetCurrentSLIState failed: 0xfffffff7
+[2019.05.08-09.59.13:939][  0]LogD3D11RHI: Async texture creation enabled
+[2019.05.08-09.59.13:987][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Global and no native library supported.
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Global_SC and no native library supported.
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent and no native library supported.
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent_SC and no native library supported.
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent and no native library supported.
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent_SC and no native library supported.
+[2019.05.08-09.59.14:005][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR_SC and no native library supported.
+[2019.05.08-09.59.14:006][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR and no native library supported.
+[2019.05.08-09.59.14:007][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR_SC and no native library supported.
+[2019.05.08-09.59.14:007][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR and no native library supported.
+[2019.05.08-09.59.14:007][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR_SC and no native library supported.
+[2019.05.08-09.59.14:007][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR and no native library supported.
+[2019.05.08-09.59.14:007][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR_SC and no native library supported.
+[2019.05.08-09.59.14:007][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.08-09.59.14:007][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.08-09.59.14:162][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.05.08-09.59.14:243][  0]LogSlate: Using FreeType 2.6.0
+[2019.05.08-09.59.14:268][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.05.08-09.59.14:363][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject and no native library supported.
+[2019.05.08-09.59.14:363][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject_SC and no native library supported.
+[2019.05.08-09.59.14:363][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.08-09.59.14:363][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject and no native library supported.
+[2019.05.08-09.59.14:364][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject_SC and no native library supported.
+[2019.05.08-09.59.14:364][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.08-09.59.14:364][  0]LogInit: Using OS detected language (en-GB).
+[2019.05.08-09.59.14:364][  0]LogInit: Using OS detected locale (en-GB).
+[2019.05.08-09.59.14:364][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the language.
+[2019.05.08-09.59.14:364][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the locale.
+[2019.05.08-09.59.14:380][  0]LogStreaming: Display: Took  0.017s to InitGameTextLocalization.
+[2019.05.08-09.59.14:416][  0]LogAssetRegistry: FAssetRegistry took 0.0334 seconds to start up
+[2019.05.08-09.59.14:788][  0]LogStreaming: Display: Flushing async loaders.
+[2019.05.08-09.59.14:801][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.011137 seconds
+[2019.05.08-09.59.14:803][  0]LogPakFile: New pak file ../../../TopDownProject/Content/Paks/TopDownProject-WindowsNoEditor.pak added to pak precacher.
+[2019.05.08-09.59.14:823][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2019.05.08-09.59.14:891][  0]LogNetVersion: TopDownProject 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 903755019)
+[2019.05.08-09.59.15:378][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.08-09.59.15:523][  0]LogMoviePlayer: Initializing movie player
+[2019.05.08-09.59.15:634][  0]LogSlate: Slate font cache was flushed
+[2019.05.08-09.59.15:723][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.05.08-09.59.15:723][  0]LogOcInput: OculusInput pre-init called
+[2019.05.08-09.59.15:728][  0]LogUObjectArray: 34002 objects as part of root set at end of initial load.
+[2019.05.08-09.59.15:728][  0]LogUObjectAllocator: 5130352 out of 0 bytes used by permanent object pool.
+[2019.05.08-09.59.15:728][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.05.08-09.59.15:741][  0]LogEngine: Initializing Engine...
+[2019.05.08-09.59.15:742][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.08-09.59.15:754][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.001 s
+[2019.05.08-09.59.15:754][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.08-09.59.15:754][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.08-09.59.15:754][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.08-09.59.16:258][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.05.08-09.59.16:381][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2019.05.08-09.59.16:389][  0]LogInit: FAudioDevice initialized.
+[2019.05.08-09.59.16:399][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.05.08-09.59.16:399][  0]LogInit: Texture streaming: Enabled
+[2019.05.08-09.59.16:474][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.08-09.59.16:477][  0]LogInit: Display: Game Engine Initialized.
+[2019.05.08-09.59.16:477][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.05.08-09.59.16:477][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.08-09.59.16:477][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.08-09.59.16:478][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.08-09.59.16:478][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.08-09.59.16:486][  0]LogInit: Display: Starting Game.
+[2019.05.08-09.59.16:487][  0]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2019.05.08-09.59.16:488][  0]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2019.05.08-09.59.17:508][  0]LogAIModule: Creating AISystem for world MainMenu
+[2019.05.08-09.59.17:510][  0]LogLoad: Game class is 'TDPGameModeBase_Menu_BP_C'
+[2019.05.08-09.59.17:578][  0]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2019.05.08-10.59.17
+[2019.05.08-09.59.17:616][  0]LogWorld: Bringing up level for play took: 0.104225
+[2019.05.08-09.59.17:649][  0]LogUMG: Display: Widget Class MainMenu_C - Loaded Fast Template.
+[2019.05.08-09.59.17:657][  0]LogLoad: Took 1.169050 seconds to LoadMap(/Game/Maps/MainMenu)
+[2019.05.08-09.59.17:696][  0]LogSlate: Took 0.012519 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2019.05.08-09.59.17:788][  0]LogRenderer: Reallocating scene render targets to support 1920x1080 Format 10 NumSamples 1 (Frame:1).
+[2019.05.08-09.59.17:788][  0]LogLoad: (Engine Initialization) Total time: 7.71 seconds
+[2019.05.08-09.59.17:869][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.05.08-09.59.26:713][154]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-09.59.26:874][157]LogUMG: Display: Widget Class MainMenu_Options_C - Loaded Fast Template.
+[2019.05.08-09.59.32:693][264]r.ScreenPercentage = "40"
+[2019.05.08-09.59.32:706][264]sg.ShadowQuality = "0"
+[2019.05.08-09.59.32:706][264]Command not recognized: sq.TextureQuality 0
+[2019.05.08-09.59.32:710][265]LogRenderer: Reallocating scene render targets to support 1920x1080 Format 10 NumSamples 1 (Frame:266).
+[2019.05.08-09.59.32:765][267]LogRenderer: Reallocating scene render targets to support 768x432 Format 10 NumSamples 1 (Frame:267).
+[2019.05.08-09.59.35:632][356]r.ScreenPercentage = "100"
+[2019.05.08-09.59.35:632][356]sg.ShadowQuality = "2"
+[2019.05.08-09.59.35:632][356]Command not recognized: sq.TextureQuality 2
+[2019.05.08-09.59.35:635][357]LogRenderer: Reallocating scene render targets to support 1920x1080 Format 10 NumSamples 1 (Frame:358).
+[2019.05.08-09.59.37:619][393]r.ScreenPercentage = "40"
+[2019.05.08-09.59.37:674][393]sg.ShadowQuality = "0"
+[2019.05.08-09.59.37:674][393]Command not recognized: sq.TextureQuality 0
+[2019.05.08-09.59.37:678][394]LogRenderer: Reallocating scene render targets to support 1920x1080 Format 10 NumSamples 1 (Frame:395).
+[2019.05.08-09.59.37:734][396]LogRenderer: Reallocating scene render targets to support 768x432 Format 10 NumSamples 1 (Frame:396).
+[2019.05.08-10.00.00:989][374]LogNet: Browse: /Game/Maps/MainLevel
+[2019.05.08-10.00.00:989][374]LogLoad: LoadMap: /Game/Maps/MainLevel
+[2019.05.08-10.00.01:061][374]LogStreaming: Display: Flushing async loaders.
+[2019.05.08-10.00.01:208][374]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.08-10.00.01:382][374]LogAIModule: Creating AISystem for world MainLevel
+[2019.05.08-10.00.01:383][374]LogLoad: Game class is 'TDPGameModeBase_Game_BP_C'
+[2019.05.08-10.00.01:402][374]LogWorld: Bringing World /Game/Maps/MainLevel.MainLevel up for play (max tick rate 0) at 2019.05.08-11.00.01
+[2019.05.08-10.00.01:415][374]LogWorld: Bringing up level for play took: 0.032112
+[2019.05.08-10.00.01:423][374]LogLoad: Took 0.433315 seconds to LoadMap(/Game/Maps/MainLevel)
+[2019.05.08-10.00.01:435][374]LogUMG: Display: Widget Class PlayerInfo_C - Loaded Fast Template.
+[2019.05.08-10.00.03:745][466]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.04:610][493]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.05:205][510]LogUMG: Display: Widget Class PauseMenu_C - Loaded Fast Template.
+[2019.05.08-10.00.07:026][556]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.00.07:198][560]LogUMG: Display: Widget Class PauseMenu_Options_C - Loaded Fast Template.
+[2019.05.08-10.00.15:967][721]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.16:612][730]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.17:234][739]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.17:808][747]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.18:427][756]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.23:644][827]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.24:275][835]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.24:915][843]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.25:571][851]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.30:894][913]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.31:526][920]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.32:160][927]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.32:803][934]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.40:263][  9]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.40:890][ 15]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.41:523][ 21]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.44:623][ 50]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.45:278][ 56]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.45:935][ 62]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.46:599][ 68]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.47:266][ 74]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.49:530][ 94]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.50:219][100]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.50:914][106]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.52:551][120]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.53:262][126]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.53:976][132]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.54:679][138]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_29 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.00.59:654][181]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_30 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.00:365][187]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_31 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.01:081][193]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_32 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.01:804][199]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_33 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.02:529][205]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_34 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.03:262][211]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_35 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.03:998][217]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_36 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.04:739][223]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_37 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.05:488][229]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_38 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.12:011][280]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_39 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.12:669][285]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_40 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.13:329][290]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_41 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.14:127][296]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_42 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.15:194][304]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_43 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.15:869][309]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_44 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.16:543][314]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_45 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.17:223][319]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_46 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.37:381][458]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.01.52:454][552]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_47 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.53:956][561]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_48 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.54:628][565]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_49 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.55:300][569]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_50 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.01.55:975][573]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_51 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.01:438][605]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_52 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.02:133][609]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_53 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.02:826][613]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_54 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.07:569][640]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_55 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.09:352][650]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_56 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.10:605][657]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_57 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.51:053][867]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_58 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.51:876][871]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_59 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.53:531][879]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_60 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.02.54:363][883]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_61 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.02:551][922]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_62 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.03:404][926]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_63 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.04:256][930]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_64 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.05:111][934]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_65 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.05:967][938]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_66 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.21:677][ 10]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_67 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.22:606][ 14]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_68 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.23:466][ 18]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_69 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.24:363][ 22]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_70 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.25:262][ 26]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_71 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.26:165][ 30]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_72 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.35:065][ 69]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_73 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.35:993][ 73]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_74 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.36:918][ 77]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_75 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.37:846][ 81]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_76 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.38:773][ 85]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_77 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.39:704][ 89]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_78 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.40:638][ 93]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_79 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.43:692][106]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_80 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.44:637][110]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_81 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.45:582][114]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_82 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.46:530][118]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_83 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.55:161][154]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_84 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.56:130][158]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_85 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.57:102][162]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_86 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.58:074][166]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_87 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.03.59:056][170]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_88 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.04.00:033][174]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_89 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.04.06:735][203]LogUMG: Display: Widget Class GameOverText_C - Loaded Fast Template.
+[2019.05.08-10.04.55:132][459]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.04.55:133][459]LogNet: Browse: /Game/Maps/MainLevel
+[2019.05.08-10.04.55:332][459]LogLoad: LoadMap: /Game/Maps/MainLevel
+[2019.05.08-10.04.55:815][459]LogStreaming: Display: Flushing async loaders.
+[2019.05.08-10.04.55:855][459]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.08-10.04.55:918][459]LogAIModule: Creating AISystem for world MainLevel
+[2019.05.08-10.04.55:919][459]LogLoad: Game class is 'TDPGameModeBase_Game_BP_C'
+[2019.05.08-10.04.55:930][459]LogWorld: Bringing World /Game/Maps/MainLevel.MainLevel up for play (max tick rate 0) at 2019.05.08-11.04.55
+[2019.05.08-10.04.55:947][459]LogWorld: Bringing up level for play took: 0.027322
+[2019.05.08-10.04.55:949][459]LogLoad: Took 0.617054 seconds to LoadMap(/Game/Maps/MainLevel)
+[2019.05.08-10.04.55:952][459]LogUMG: Display: Widget Class PlayerInfo_C - Loaded Fast Template.
+[2019.05.08-10.04.58:525][515]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.04.59:071][527]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.04.59:617][539]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.00:162][551]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.00:708][563]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.01:253][575]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.01:799][587]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.05:436][667]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.05:981][679]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.06:565][691]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.07:132][702]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.07:714][713]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.08:312][724]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.14:141][818]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.14:766][827]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.15:401][836]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.58:746][256]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.05.59:415][261]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.00:088][266]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.00:765][271]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.05:316][304]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.06:018][309]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.06:723][314]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.07:432][319]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.08:147][324]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.08:864][329]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.09:586][334]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.10:309][339]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.16:549][381]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.17:310][386]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_29 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.18:074][391]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_30 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.18:842][396]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_31 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.19:617][401]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_32 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.21:023][410]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_33 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.21:809][415]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_34 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.22:598][420]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_35 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.23:391][425]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_36 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.24:187][430]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_37 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.30:196][467]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_38 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.31:022][472]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_39 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.31:853][477]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_40 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.33:019][484]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_41 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.33:689][488]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_42 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.34:363][492]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_43 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.42:806][541]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_44 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.43:509][545]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_45 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.44:215][549]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_46 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.44:925][553]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_47 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.45:637][557]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_48 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.46:530][562]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_49 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.47:247][566]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_50 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.06.58:657][628]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_51 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.03:227][652]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_52 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.03:997][656]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_53 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.07:296][673]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_54 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.08:079][677]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_55 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.08:864][681]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_56 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.09:652][685]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_57 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.10:442][689]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_58 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.11:233][693]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_59 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.12:026][697]LogUMG: Display: Widget Class PauseMenu_C - Loaded Fast Template.
+[2019.05.08-10.07.14:224][708]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.07.14:224][708]LogUMG: Display: Widget Class PauseMenu_Options_C - Loaded Fast Template.
+[2019.05.08-10.07.19:499][734]r.ScreenPercentage = "40"
+[2019.05.08-10.07.19:703][734]sg.ShadowQuality = "0"
+[2019.05.08-10.07.19:703][734]Command not recognized: sq.TextureQuality 0
+[2019.05.08-10.07.20:934][741]r.ScreenPercentage = "40"
+[2019.05.08-10.07.21:139][741]sg.ShadowQuality = "0"
+[2019.05.08-10.07.21:140][741]Command not recognized: sq.TextureQuality 0
+[2019.05.08-10.07.32:451][796]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_60 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.33:305][800]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_61 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.34:161][804]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_62 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.35:019][808]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_63 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.35:880][812]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_64 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.39:133][827]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_65 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.40:007][831]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_66 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.40:881][835]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_67 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.41:758][839]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_68 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.45:290][855]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_69 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.46:179][859]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_70 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.47:966][867]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_71 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.48:861][871]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_72 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.49:758][875]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_73 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.50:660][879]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_74 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.51:563][883]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_75 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.52:689][888]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_76 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.55:855][902]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_77 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.56:765][906]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_78 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.57:677][910]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_79 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.58:592][914]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_80 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.07.59:513][918]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_81 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.18:485][998]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_82 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.19:456][  2]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_83 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.20:426][  6]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_84 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.24:092][ 21]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.08.39:364][ 82]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_85 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.40:129][ 85]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_86 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.40:895][ 88]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_87 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.41:662][ 91]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_88 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.42:430][ 94]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_89 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.43:197][ 97]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_90 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.46:811][111]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.08.57:572][152]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_91 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.58:369][155]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_92 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.59:167][158]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_93 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.08.59:968][161]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_94 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.00:770][164]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_95 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.01:573][167]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_96 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.02:377][170]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_97 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.03:183][173]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_98 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.07:234][188]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_99 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.08:048][191]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_100 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.08:862][194]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_101 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.09:679][197]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_102 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.10:498][200]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_103 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.11:317][203]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_104 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.12:137][206]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_105 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.12:955][209]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_106 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.13:776][212]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_107 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.14:597][215]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_108 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.15:420][218]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_109 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.16:245][221]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_110 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.17:070][224]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_111 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.17:897][227]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_112 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.36:468][293]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_113 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.37:331][296]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_114 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.38:194][299]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_115 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.39:057][302]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_116 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.39:922][305]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_117 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.43:980][319]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_118 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.44:852][322]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_119 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.51:300][344]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_120 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.52:186][347]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_121 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.53:079][350]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_122 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.53:966][353]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_123 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.55:153][357]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_124 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.56:043][360]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_125 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.56:933][363]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_126 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.57:826][366]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_127 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.58:719][369]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_128 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.09.59:614][372]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_129 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.01:113][377]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_130 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.02:311][381]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_131 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.06:426][395]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_132 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.07:276][398]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_133 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.22:307][457]LogUMG: Display: Widget Class GameOverText_C - Loaded Fast Template.
+[2019.05.08-10.10.39:115][542]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.10.39:316][543]LogNet: Browse: /Game/Maps/MainLevel
+[2019.05.08-10.10.39:517][543]LogLoad: LoadMap: /Game/Maps/MainLevel
+[2019.05.08-10.10.39:666][543]LogStreaming: Display: Flushing async loaders.
+[2019.05.08-10.10.39:703][543]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.08-10.10.39:766][543]LogAIModule: Creating AISystem for world MainLevel
+[2019.05.08-10.10.39:766][543]LogLoad: Game class is 'TDPGameModeBase_Game_BP_C'
+[2019.05.08-10.10.39:778][543]LogWorld: Bringing World /Game/Maps/MainLevel.MainLevel up for play (max tick rate 0) at 2019.05.08-11.10.39
+[2019.05.08-10.10.39:797][543]LogWorld: Bringing up level for play took: 0.030088
+[2019.05.08-10.10.39:800][543]LogLoad: Took 0.282935 seconds to LoadMap(/Game/Maps/MainLevel)
+[2019.05.08-10.10.39:803][543]LogUMG: Display: Widget Class PlayerInfo_C - Loaded Fast Template.
+[2019.05.08-10.10.41:614][582]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.42:160][594]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.42:705][606]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.43:251][618]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.43:797][630]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.44:342][642]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.44:887][654]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.47:888][720]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.48:433][732]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.48:979][744]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.49:524][756]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.50:285][772]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.50:837][783]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.53:822][839]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.54:398][849]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.54:988][859]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.55:591][869]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.56:206][879]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.10.56:774][888]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.08-10.11.50:154][423]LogUMG: Display: Widget Class WinScreen_C - Loaded Fast Template.
+[2019.05.08-10.12.18:223][623]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.08-10.12.18:377][624]Closing by request
+[2019.05.08-10.12.18:377][624]LogWindows: FPlatformMisc::RequestExit(0)
+[2019.05.08-10.12.18:744][625]LogSlate: Request Window 'TopDownProject (64-bit Development PCD3D_SM5) ' being destroyed
+[2019.05.08-10.12.18:770][625]LogSlate: Window 'TopDownProject (64-bit Development PCD3D_SM5) ' being destroyed
+[2019.05.08-10.12.18:854][625]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2019.05.08-10.12.18:854][625]LogExit: Preparing to exit.
+[2019.05.08-10.12.18:854][625]LogMoviePlayer: Shutting down movie player
+[2019.05.08-10.12.18:884][625]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.08-10.12.18:894][625]LogExit: Game engine shut down
+[2019.05.08-10.12.18:937][625]LogExit: Object subsystem successfully closed.
+[2019.05.08-10.12.19:272][625]LogD3D11RHI: Shutdown
+[2019.05.08-10.12.19:272][625]LogD3D11RHI: CleanupD3DDevice
+[2019.05.08-10.12.19:274][625]LogD3D11RHI: ~FD3D11DynamicRHI
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module AutomationController (188)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module AutomationWorker (186)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module Voice (184)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module AIModule (182)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module GameplayDebugger (181)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module NavigationSystem (179)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (176)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (174)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (172)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (170)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module CharacterAI (168)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module SessionServices (166)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (164)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module MovieScene (162)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (160)
+[2019.05.08-10.12.19:274][625]LogModuleManager: Shutting down and abandoning module ProfilerService (158)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module TaskGraph (156)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module SteamVRController (154)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (152)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module OculusInput (150)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (148)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (146)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module CableComponent (144)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module AudioCapture (142)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (140)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module AndroidPermission (138)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module MediaCompositing (136)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module LinearTimecode (134)
+[2019.05.08-10.12.19:499][625]LogModuleManager: Shutting down and abandoning module ImgMedia (132)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module HTML5Networking (130)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module BackChannel (128)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module AppleVision (126)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module AppleImageUtils (124)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (122)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module GeometryCache (120)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module EditableMesh (118)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module DatasmithContent (116)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module TopDownProject (114)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (112)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module PhysXVehicles (110)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (108)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (106)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module ActorSequence (104)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module UdpMessaging (102)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module TcpMessaging (100)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module FacialAnimation (98)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (96)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module AISupportModule (94)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (90)
+[2019.05.08-10.12.19:501][625]LogModuleManager: Shutting down and abandoning module WmfMedia (88)
+[2019.05.08-10.12.19:528][625]LogModuleManager: Shutting down and abandoning module Media (87)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module PacketHandler (84)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (82)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module MediaAssets (80)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module Overlay (78)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module UMG (76)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module SlateReflector (74)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module Slate (72)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module MRMesh (70)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module Messaging (68)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module XAudio2 (64)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module Networking (62)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module Core (60)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module LevelSequence (58)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module ImageWrapper (54)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module PhysXCooking (50)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module SteamVR (48)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module OculusHMD (46)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (42)
+[2019.05.08-10.12.19:533][625]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2019.05.08-10.12.19:534][625]LogModuleManager: Shutting down and abandoning module HTTP (33)
+[2019.05.08-10.12.19:566][625]LogModuleManager: Shutting down and abandoning module SSL (32)
+[2019.05.08-10.12.19:566][625]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2019.05.08-10.12.19:566][625]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2019.05.08-10.12.19:566][625]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2019.05.08-10.12.19:567][625]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2019.05.08-10.12.19:571][625]LogExit: Exiting.
+[2019.05.08-10.12.19:574][625]Log file closed, 05/08/19 11:12:19

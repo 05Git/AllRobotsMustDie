@@ -1,0 +1,473 @@
+﻿Log file open, 05/06/19 00:16:38
+LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
+LogWindows: File 'aqProf.dll' does not exist
+LogWindows: Failed to load 'VSPerf140.dll' (GetLastError=126)
+LogWindows: File 'VSPerf140.dll' does not exist
+LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi.dll' does not exist
+LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
+LogWindows: File 'VtuneApi32e.dll' does not exist
+LogPakFile: Display: Found Pak file ../../../TopDownProject/Content/Paks/TopDownProject-WindowsNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../TopDownProject/Content/Paks/TopDownProject-WindowsNoEditor.pak.
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 11 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.826866
+LogPluginManager: Warning: Plugin 'StaticMeshEditorExtension' exists at '../../../Enterprise/Plugins/Editor/StaticMeshEditorExtension/StaticMeshEditorExtension.uplugin' and '../../../Enterprise/Plugins/Editor/StaticMeshEditorExtension/StaticMeshEditorExtension.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithCADImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithCADImporter/DatasmithCADImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithCADImporter/DatasmithCADImporter.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithFBXImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithFBXImporter/DatasmithFBXImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithFBXImporter/DatasmithFBXImporter.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithImporter/DatasmithImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithImporter/DatasmithImporter.uplugin' - second location will be ignored
+LogPluginManager: Warning: Plugin 'DatasmithMDLImporter' exists at '../../../Enterprise/Plugins/Editor/DatasmithMDLImporter/DatasmithMDLImporter.uplugin' and '../../../Enterprise/Plugins/Editor/DatasmithMDLImporter/DatasmithMDLImporter.uplugin' - second location will be ignored
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin DatasmithCADImporter
+LogPluginManager: Mounting plugin DatasmithImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin DatasmithFBXImporter
+LogPluginManager: Mounting plugin DatasmithMDLImporter
+LogPluginManager: Mounting plugin StaticMeshEditorExtension
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin MeshEditor
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleVision
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin HTML5Networking
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin LinearTimecode
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin ImmediatePhysics
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogStreaming: Display: Took  0.210s to configure plugins.
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2h
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogInit: Build: ++UE4+Release-4.20-CL-4369336
+LogInit: Engine Version: 4.20.3-4369336+++UE4+Release-4.20
+LogInit: Compatible Engine Version: 4.20.0-4212847+++UE4+Release-4.20
+LogInit: Net CL: 4212847
+LogInit: OS: Windows 10 (), CPU: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz, GPU: Intel(R) HD Graphics 620
+LogInit: Compiled (64-bit): Sep 17 2018 12:36:23
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.20
+LogInit: Command Line:  
+LogInit: Base Directory: E:/Unreal 4/TopDownProject/WindowsNoEditor/TopDownProject/Binaries/Win64/
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 20
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 24
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 34
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 26
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 9
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 2
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 12
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 1
+LogStreaming: Display: Took  0.000s to delete old logs.
+LogInit: Presizing for max 2097152 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+[2019.05.05-23.16.38:576][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2019.05.05-23.16.38:576][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
+[2019.05.05-23.16.38:620][  0]LogHAL: Display: Platform has ~ 8 GB [8505135104 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.05.05-23.16.38:620][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2019.05.05-23.16.38:620][  0]LogInit: Setting Device Profile CVar: [[r.Vulkan.UseRealUBs:1]]
+[2019.05.05-23.16.38:620][  0]LogInit: Going up to parent DeviceProfile []
+[2019.05.05-23.16.38:620][  0]LogInit: Computer: MSI
+[2019.05.05-23.16.38:620][  0]LogInit: User: OscarSellors
+[2019.05.05-23.16.38:620][  0]LogInit: CPU Page size=4096, Cores=2
+[2019.05.05-23.16.38:620][  0]LogInit: High frequency timer resolution =2.648438 MHz
+[2019.05.05-23.16.38:622][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2019.05.05-23.16.38:623][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
+[2019.05.05-23.16.38:623][  0]LogMemory: Process Physical Memory: 54.04 MB used, 54.04 MB peak
+[2019.05.05-23.16.38:623][  0]LogMemory: Process Virtual Memory: 63.93 MB used, 63.93 MB peak
+[2019.05.05-23.16.38:623][  0]LogMemory: Physical Memory: 4478.58 MB used,  3632.55 MB free, 8111.13 MB total
+[2019.05.05-23.16.38:623][  0]LogMemory: Virtual Memory: 4429.19 MB used,  3632.55 MB free, 134217728.00 MB total
+[2019.05.05-23.16.39:470][  0]LogInit: Using OS detected language (en-GB).
+[2019.05.05-23.16.39:470][  0]LogInit: Using OS detected locale (en-GB).
+[2019.05.05-23.16.39:471][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2019.05.05-23.16.39:496][  0]LogStreaming: Display: Took  0.027s to InitEngineTextLocalization.
+[2019.05.05-23.16.39:903][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2019.05.05-23.16.39:903][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2019.05.05-23.16.39:913][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.05-23.16.39:913][  0]LogD3D11RHI: D3D11 adapters:
+[2019.05.05-23.16.39:986][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1050' (Feature Level 11_0)
+[2019.05.05-23.16.39:986][  0]LogD3D11RHI:       2006/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2019.05.05-23.16.39:997][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 620' (Feature Level 11_0)
+[2019.05.05-23.16.39:997][  0]LogD3D11RHI:       128/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2019.05.05-23.16.40:000][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2019.05.05-23.16.40:000][  0]LogD3D11RHI:       0/0/4055 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2019.05.05-23.16.40:000][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2019.05.05-23.16.40:013][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2019.05.05-23.16.40:013][  0]LogD3D11RHI:     GPU DeviceId: 0x1c8d (for the marketing name, search the web for "GPU Device Id")
+[2019.05.05-23.16.40:014][  0]LogWindows: EnumDisplayDevices:
+[2019.05.05-23.16.40:014][  0]LogWindows:    0. 'Intel(R) HD Graphics 620' (P:1 D:1)
+[2019.05.05-23.16.40:014][  0]LogWindows:    1. 'Intel(R) HD Graphics 620' (P:0 D:0)
+[2019.05.05-23.16.40:014][  0]LogWindows:    2. 'Intel(R) HD Graphics 620' (P:0 D:0)
+[2019.05.05-23.16.40:015][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2019.05.05-23.16.40:015][  0]LogWindows:    4. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2019.05.05-23.16.40:015][  0]LogWindows:    5. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2019.05.05-23.16.40:015][  0]LogWindows:    6. 'NVIDIA GeForce GTX 1050' (P:0 D:0)
+[2019.05.05-23.16.40:015][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2019.05.05-23.16.40:015][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1050
+[2019.05.05-23.16.40:015][  0]LogD3D11RHI:   Driver Version: 382.05 (internal:22.21.13.8205, unified:382.05)
+[2019.05.05-23.16.40:016][  0]LogD3D11RHI:      Driver Date: 5-1-2017
+[2019.05.05-23.16.40:016][  0]LogRHI: Texture pool is 1404 MB (70% of 2006 MB)
+[2019.05.05-23.16.40:052][  0]LogD3D11RHI: Async texture creation enabled
+[2019.05.05-23.16.40:066][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Global and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Global_SC and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent_SC and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithContent_SC and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter_SC and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: DatasmithMDLImporter_SC and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension_SC and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension and no native library supported.
+[2019.05.05-23.16.40:068][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: StaticMeshEditorExtension_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MeshEditor_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: Paper2D_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: CryptoKeys_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: MediaCompositing_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: OculusVR_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR_SC and no native library supported.
+[2019.05.05-23.16.40:069][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR and no native library supported.
+[2019.05.05-23.16.40:070][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: SteamVR_SC and no native library supported.
+[2019.05.05-23.16.40:070][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.05-23.16.40:279][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2019.05.05-23.16.40:358][  0]LogSlate: Using FreeType 2.6.0
+[2019.05.05-23.16.40:359][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2019.05.05-23.16.40:407][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject and no native library supported.
+[2019.05.05-23.16.40:407][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject_SC and no native library supported.
+[2019.05.05-23.16.40:472][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.05-23.16.40:472][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject and no native library supported.
+[2019.05.05-23.16.40:472][  0]LogShaderLibrary: Display: Failed to load Shared Shader Library: TopDownProject_SC and no native library supported.
+[2019.05.05-23.16.40:472][  0]LogRHI: Display: Failed to open default shader pipeline cache for TopDownProject using shader platform 0.
+[2019.05.05-23.16.40:472][  0]LogInit: Using OS detected language (en-GB).
+[2019.05.05-23.16.40:472][  0]LogInit: Using OS detected locale (en-GB).
+[2019.05.05-23.16.40:472][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the language.
+[2019.05.05-23.16.40:472][  0]LogTextLocalizationManager: No localization for 'en-GB' exists, so 'en' will be used for the locale.
+[2019.05.05-23.16.40:492][  0]LogStreaming: Display: Took  0.020s to InitGameTextLocalization.
+[2019.05.05-23.16.40:535][  0]LogAssetRegistry: FAssetRegistry took 0.0176 seconds to start up
+[2019.05.05-23.16.40:891][  0]LogStreaming: Display: Flushing async loaders.
+[2019.05.05-23.16.40:914][  0]LogPackageLocalizationCache: Processed 11 localized package path(s) for 1 prioritized culture(s) in 0.013471 seconds
+[2019.05.05-23.16.40:922][  0]LogPakFile: New pak file ../../../TopDownProject/Content/Paks/TopDownProject-WindowsNoEditor.pak added to pak precacher.
+[2019.05.05-23.16.40:965][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2019.05.05-23.16.41:004][  0]LogNetVersion: TopDownProject 1.0.0, NetCL: 4212847, EngineNetVer: 5, GameNetVer: 0 (Checksum: 903755019)
+[2019.05.05-23.16.41:414][  0]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.05-23.16.41:640][  0]LogMoviePlayer: Initializing movie player
+[2019.05.05-23.16.41:854][  0]LogSlate: Slate font cache was flushed
+[2019.05.05-23.16.41:970][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2019.05.05-23.16.41:970][  0]LogOcInput: OculusInput pre-init called
+[2019.05.05-23.16.41:982][  0]LogUObjectArray: 34002 objects as part of root set at end of initial load.
+[2019.05.05-23.16.41:982][  0]LogUObjectAllocator: 5130352 out of 0 bytes used by permanent object pool.
+[2019.05.05-23.16.41:982][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2019.05.05-23.16.42:002][  0]LogEngine: Initializing Engine...
+[2019.05.05-23.16.42:039][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2019.05.05-23.16.42:061][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.001 s
+[2019.05.05-23.16.42:061][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.05-23.16.42:062][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.05-23.16.42:062][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.05-23.16.42:158][  0]LogInit: Initializing FReadOnlyCVARCache
+[2019.05.05-23.16.42:300][  0]LogInit: XAudio2 using 'Headset Earphone (HyperX Virtual Surround Sound)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2019.05.05-23.16.42:318][  0]LogInit: FAudioDevice initialized.
+[2019.05.05-23.16.42:331][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2019.05.05-23.16.42:339][  0]LogInit: Texture streaming: Enabled
+[2019.05.05-23.16.42:600][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-23.16.42:619][  0]LogInit: Display: Game Engine Initialized.
+[2019.05.05-23.16.42:619][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2019.05.05-23.16.42:619][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI prefixes -  0.000 s
+[2019.05.05-23.16.42:619][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2019.05.05-23.16.42:619][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: ImportINI -  0.000 s
+[2019.05.05-23.16.42:619][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2019.05.05-23.16.42:637][  0]LogInit: Display: Starting Game.
+[2019.05.05-23.16.42:638][  0]LogNet: Browse: /Game/Maps/MainMenu?Name=Player
+[2019.05.05-23.16.42:639][  0]LogLoad: LoadMap: /Game/Maps/MainMenu?Name=Player
+[2019.05.05-23.16.42:944][  0]LogAIModule: Creating AISystem for world MainMenu
+[2019.05.05-23.16.42:947][  0]LogLoad: Game class is 'TDPGameModeBase_Menu_BP_C'
+[2019.05.05-23.16.43:079][  0]LogWorld: Bringing World /Game/Maps/MainMenu.MainMenu up for play (max tick rate 0) at 2019.05.06-00.16.43
+[2019.05.05-23.16.43:129][  0]LogWorld: Bringing up level for play took: 0.179885
+[2019.05.05-23.16.43:214][  0]LogUMG: Display: Widget Class MainMenu_C - Loaded Fast Template.
+[2019.05.05-23.16.43:250][  0]LogLoad: Took 0.610856 seconds to LoadMap(/Game/Maps/MainMenu)
+[2019.05.05-23.16.43:277][  0]LogSlate: Took 0.000137 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2019.05.05-23.16.43:364][  0]LogRenderer: Reallocating scene render targets to support 1536x864 Format 10 NumSamples 1 (Frame:1).
+[2019.05.05-23.16.43:364][  0]LogLoad: (Engine Initialization) Total time: 6.64 seconds
+[2019.05.05-23.16.43:632][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2019.05.05-23.16.45:086][ 75]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-23.16.45:199][ 82]LogUMG: Display: Widget Class MainMenu_Options_C - Loaded Fast Template.
+[2019.05.05-23.16.46:154][132]r.ScreenPercentage = "70"
+[2019.05.05-23.16.46:155][132]sg.ShadowQuality = "1"
+[2019.05.05-23.16.46:155][132]Command not recognized: sq.TextureQuality 1
+[2019.05.05-23.16.46:159][133]LogRenderer: Reallocating scene render targets to support 1536x864 Format 10 NumSamples 1 (Frame:134).
+[2019.05.05-23.16.46:183][135]LogRenderer: Reallocating scene render targets to support 1076x608 Format 10 NumSamples 1 (Frame:135).
+[2019.05.05-23.16.47:111][192]r.ScreenPercentage = "40"
+[2019.05.05-23.16.47:112][192]sg.ShadowQuality = "0"
+[2019.05.05-23.16.47:112][192]Command not recognized: sq.TextureQuality 0
+[2019.05.05-23.16.47:118][193]LogRenderer: Reallocating scene render targets to support 1076x608 Format 10 NumSamples 1 (Frame:194).
+[2019.05.05-23.16.47:132][194]LogRenderer: Reallocating scene render targets to support 616x348 Format 10 NumSamples 1 (Frame:195).
+[2019.05.05-23.16.47:902][241]r.ScreenPercentage = "70"
+[2019.05.05-23.16.47:902][241]sg.ShadowQuality = "1"
+[2019.05.05-23.16.47:902][241]Command not recognized: sq.TextureQuality 1
+[2019.05.05-23.16.47:906][242]LogRenderer: Reallocating scene render targets to support 1076x608 Format 10 NumSamples 1 (Frame:243).
+[2019.05.05-23.16.48:950][306]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-23.16.49:097][315]r.ScreenPercentage = "40"
+[2019.05.05-23.16.49:098][315]sg.ShadowQuality = "0"
+[2019.05.05-23.16.49:099][315]Command not recognized: sq.TextureQuality 0
+[2019.05.05-23.16.49:103][316]LogRenderer: Reallocating scene render targets to support 1076x608 Format 10 NumSamples 1 (Frame:317).
+[2019.05.05-23.16.49:119][317]LogRenderer: Reallocating scene render targets to support 616x348 Format 10 NumSamples 1 (Frame:318).
+[2019.05.05-23.16.49:644][349]r.ScreenPercentage = "100"
+[2019.05.05-23.16.49:644][349]sg.ShadowQuality = "2"
+[2019.05.05-23.16.49:644][349]Command not recognized: sq.TextureQuality 2
+[2019.05.05-23.16.49:651][350]LogRenderer: Reallocating scene render targets to support 1536x864 Format 10 NumSamples 1 (Frame:351).
+[2019.05.05-23.16.51:483][463]LogNet: Browse: /Game/Maps/MainLevel
+[2019.05.05-23.16.51:483][463]LogLoad: LoadMap: /Game/Maps/MainLevel
+[2019.05.05-23.16.51:814][463]LogStreaming: Display: Flushing async loaders.
+[2019.05.05-23.16.51:857][463]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.05-23.16.51:963][463]LogAIModule: Creating AISystem for world MainLevel
+[2019.05.05-23.16.51:963][463]LogLoad: Game class is 'TDPGameModeBase_Game_BP_C'
+[2019.05.05-23.16.51:984][463]LogWorld: Bringing World /Game/Maps/MainLevel.MainLevel up for play (max tick rate 0) at 2019.05.06-00.16.51
+[2019.05.05-23.16.52:034][463]LogWorld: Bringing up level for play took: 0.069956
+[2019.05.05-23.16.52:041][463]LogLoad: Took 0.557313 seconds to LoadMap(/Game/Maps/MainLevel)
+[2019.05.05-23.16.52:100][463]LogUMG: Display: Widget Class PlayerInfo_C - Loaded Fast Template.
+[2019.05.05-23.16.57:155][705]LogUMG: Display: Widget Class GameOverText_C - Loaded Fast Template.
+[2019.05.05-23.16.59:951][869]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-23.17.00:076][873]LogNet: Browse: /Game/Maps/MainLevel
+[2019.05.05-23.17.00:086][873]LogLoad: LoadMap: /Game/Maps/MainLevel
+[2019.05.05-23.17.00:325][873]LogStreaming: Display: Flushing async loaders.
+[2019.05.05-23.17.00:367][873]LogScript: Warning: Script Msg: A null object was passed as a world context object to UEngine::GetWorldFromContextObject().
+[2019.05.05-23.17.00:439][873]LogAIModule: Creating AISystem for world MainLevel
+[2019.05.05-23.17.00:439][873]LogLoad: Game class is 'TDPGameModeBase_Game_BP_C'
+[2019.05.05-23.17.00:468][873]LogWorld: Bringing World /Game/Maps/MainLevel.MainLevel up for play (max tick rate 0) at 2019.05.06-00.17.00
+[2019.05.05-23.17.00:500][873]LogWorld: Bringing up level for play took: 0.060883
+[2019.05.05-23.17.00:504][873]LogLoad: Took 0.419076 seconds to LoadMap(/Game/Maps/MainLevel)
+[2019.05.05-23.17.00:509][873]LogUMG: Display: Widget Class PlayerInfo_C - Loaded Fast Template.
+[2019.05.05-23.17.01:909][953]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.02:431][985]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.02:943][ 17]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.03:462][ 49]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.03:982][ 81]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.04:506][113]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.07:232][251]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_6 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.07:772][272]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_7 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.08:331][293]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_8 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.08:854][312]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_9 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.09:397][333]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_10 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.11:882][402]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_11 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.12:411][416]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_12 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.12:942][433]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_13 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.13:485][451]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_14 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.18:256][594]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_15 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.18:790][610]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_16 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.19:363][625]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_17 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.19:895][640]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_18 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.20:445][654]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_19 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.21:740][685]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_20 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.22:300][700]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_21 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.22:839][714]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_22 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.23:405][728]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_23 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.23:973][744]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_24 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.24:745][764]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_25 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.30:419][883]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_26 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.30:962][895]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_27 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.31:538][909]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_28 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.34:531][976]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_29 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.35:105][989]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_30 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.35:662][  1]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_31 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.37:578][ 42]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_32 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.38:132][ 54]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_33 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.38:712][ 67]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_34 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.40:143][ 97]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_35 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.40:730][108]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_36 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.41:318][120]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_37 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.41:886][131]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_38 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.44:253][177]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_39 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.44:850][187]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_40 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.45:443][197]LogActor: Warning: Bullet_BP_C /Game/Maps/MainLevel.MainLevel:PersistentLevel.Bullet_BP_C_41 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2019.05.05-23.17.49:541][269]LogUMG: Display: Widget Class PauseMenu_C - Loaded Fast Template.
+[2019.05.05-23.17.50:721][290]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2019.05.05-23.17.50:867][293]Closing by request
+[2019.05.05-23.17.50:867][293]LogWindows: FPlatformMisc::RequestExit(0)
+[2019.05.05-23.17.51:124][294]LogSlate: Request Window 'TopDownProject (64-bit Development PCD3D_SM5) ' being destroyed
+[2019.05.05-23.17.51:152][294]LogSlate: Window 'TopDownProject (64-bit Development PCD3D_SM5) ' being destroyed
+[2019.05.05-23.17.51:152][294]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2019.05.05-23.17.51:332][294]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2019.05.05-23.17.51:332][294]LogExit: Preparing to exit.
+[2019.05.05-23.17.51:332][294]LogMoviePlayer: Shutting down movie player
+[2019.05.05-23.17.51:487][294]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2019.05.05-23.17.51:508][294]LogExit: Game engine shut down
+[2019.05.05-23.17.51:695][294]LogExit: Object subsystem successfully closed.
+[2019.05.05-23.17.51:814][294]LogD3D11RHI: Shutdown
+[2019.05.05-23.17.51:815][294]LogD3D11RHI: CleanupD3DDevice
+[2019.05.05-23.17.51:826][294]LogD3D11RHI: ~FD3D11DynamicRHI
+[2019.05.05-23.17.51:827][294]LogModuleManager: Shutting down and abandoning module AutomationController (188)
+[2019.05.05-23.17.51:829][294]LogModuleManager: Shutting down and abandoning module AutomationWorker (186)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module Voice (184)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module AIModule (182)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module GameplayDebugger (181)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module NavigationSystem (179)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (176)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (174)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (172)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (170)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module CharacterAI (168)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module SessionServices (166)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (164)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module MovieScene (162)
+[2019.05.05-23.17.51:830][294]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (160)
+[2019.05.05-23.17.51:831][294]LogModuleManager: Shutting down and abandoning module ProfilerService (158)
+[2019.05.05-23.17.51:867][294]LogModuleManager: Shutting down and abandoning module TaskGraph (156)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module SteamVRController (154)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (152)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module OculusInput (150)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (148)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (146)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module CableComponent (144)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module AudioCapture (142)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (140)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module AndroidPermission (138)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module MediaCompositing (136)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module LinearTimecode (134)
+[2019.05.05-23.17.51:873][294]LogModuleManager: Shutting down and abandoning module ImgMedia (132)
+[2019.05.05-23.17.51:874][294]LogModuleManager: Shutting down and abandoning module HTML5Networking (130)
+[2019.05.05-23.17.51:874][294]LogModuleManager: Shutting down and abandoning module BackChannel (128)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module AppleVision (126)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module AppleImageUtils (124)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (122)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module GeometryCache (120)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module EditableMesh (118)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module DatasmithContent (116)
+[2019.05.05-23.17.51:875][294]LogModuleManager: Shutting down and abandoning module TopDownProject (114)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (112)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module PhysXVehicles (110)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (108)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (106)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module ActorSequence (104)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module UdpMessaging (102)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module TcpMessaging (100)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module FacialAnimation (98)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (96)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module AISupportModule (94)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (90)
+[2019.05.05-23.17.51:876][294]LogModuleManager: Shutting down and abandoning module WmfMedia (88)
+[2019.05.05-23.17.51:877][294]LogModuleManager: Shutting down and abandoning module Media (87)
+[2019.05.05-23.17.51:884][294]LogModuleManager: Shutting down and abandoning module PacketHandler (84)
+[2019.05.05-23.17.51:884][294]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (82)
+[2019.05.05-23.17.51:886][294]LogModuleManager: Shutting down and abandoning module MediaAssets (80)
+[2019.05.05-23.17.51:886][294]LogModuleManager: Shutting down and abandoning module Overlay (78)
+[2019.05.05-23.17.51:886][294]LogModuleManager: Shutting down and abandoning module UMG (76)
+[2019.05.05-23.17.51:886][294]LogModuleManager: Shutting down and abandoning module SlateReflector (74)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module Slate (72)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module MRMesh (70)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module Messaging (68)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (66)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module XAudio2 (64)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module Networking (62)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module Core (60)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module LevelSequence (58)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module ImageWrapper (54)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module InputCore (52)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module PhysXCooking (50)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module SteamVR (48)
+[2019.05.05-23.17.51:888][294]LogModuleManager: Shutting down and abandoning module OculusHMD (46)
+[2019.05.05-23.17.51:889][294]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (44)
+[2019.05.05-23.17.51:889][294]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (42)
+[2019.05.05-23.17.51:889][294]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (38)
+[2019.05.05-23.17.51:890][294]LogModuleManager: Shutting down and abandoning module HTTP (33)
+[2019.05.05-23.17.51:938][294]LogModuleManager: Shutting down and abandoning module SSL (32)
+[2019.05.05-23.17.51:938][294]LogModuleManager: Shutting down and abandoning module ShaderCore (28)
+[2019.05.05-23.17.51:938][294]LogModuleManager: Shutting down and abandoning module Landscape (26)
+[2019.05.05-23.17.51:938][294]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (24)
+[2019.05.05-23.17.51:949][294]LogModuleManager: Shutting down and abandoning module OpenGLDrv (22)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module D3D11RHI (20)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (18)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module Renderer (16)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module Engine (14)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module CoreUObject (12)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module NetworkFile (10)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (8)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2019.05.05-23.17.51:950][294]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2019.05.05-23.17.51:976][294]LogExit: Exiting.
+[2019.05.05-23.17.51:988][294]Log file closed, 05/06/19 00:17:51

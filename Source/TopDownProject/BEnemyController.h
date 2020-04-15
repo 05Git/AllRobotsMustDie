@@ -52,10 +52,10 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	/** Possesses a Pawn */
-	virtual void Possess(APawn *InPawn) override;
+	virtual void OnPossess(APawn *InPawn) override;
 
 	/** Unpossesses currently possessed pawn */
-	virtual void UnPossess() override;
+	virtual void OnUnPossess() override;
 
 	/** Sets PawnAsNPC->Alert to false */
 	void Alertness();

@@ -252,16 +252,16 @@ void ABEnemyController::Tick(float DeltaTime)
 		case onExit:
 			// Destroys and unpossesses pawn
 			PawnAsNPC->Destroy();
-			UnPossess();
+			OnUnPossess();
 			break;
 		}
 	}
 }
 
-void ABEnemyController::Possess(APawn *InPawn)
+void ABEnemyController::OnPossess(APawn *InPawn)
 {
 	// Possesses pawn and casts as a BasicEnemy
-	Super::Possess(InPawn);
+	Super::OnPossess(InPawn);
 	PawnAsNPC = Cast<ABasicEnemy>(GetPawn());
 	// Checks if PawnAsNPC is not a nullptr
 	if (PawnAsNPC != nullptr)
@@ -282,10 +282,10 @@ void ABEnemyController::Possess(APawn *InPawn)
 	}
 }
 
-void ABEnemyController::UnPossess()
+void ABEnemyController::OnUnPossess()
 {
 	// Unpossesses pawn and sets it to a nullptr
-	Super::UnPossess();
+	Super::OnUnPossess();
 	PawnAsNPC = nullptr;
 }
 
